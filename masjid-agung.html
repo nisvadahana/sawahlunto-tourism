@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Agung Sawahlunto - Wisata Religi Bersejarah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .pattern-bg {
+            background-color: #f3f4f6;
+            background-image: radial-gradient(circle at 10px 10px, rgba(245, 158, 11, 0.1) 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="atraksi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/masjid-agung.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-mosque"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Masjid Agung Sawahlunto</h1>
+            <p class="text-xl max-w-3xl">Ikon Religi dan Sejarah Kota Warisan</p>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Pengantar -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-mosque text-amber-600 mr-3"></i>
+                        Masjid Agung Sawahlunto
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Masjid Agung Sawahlunto adalah masjid bersejarah yang menjadi ikon religi dan pusat kegiatan keagamaan di Kota Sawahlunto. Dibangun pada masa kolonial Belanda, masjid ini memiliki arsitektur unik yang memadukan gaya Timur Tengah dengan sentuhan Eropa.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Terletak di pusat kota, masjid ini tidak hanya berfungsi sebagai tempat ibadah tetapi juga menjadi destinasi wisata religi yang menarik bagi pengunjung yang ingin melihat keindahan arsitektur dan nilai sejarahnya.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-amber-50 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-star"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Cepat</h3>
+                    <div class="space-y-2 text-sm">
+                        <p><span class="font-bold">Lokasi:</span> Pusat Kota Sawahlunto</p>
+                        <p><span class="font-bold">Dibangun:</span> Era Kolonial Belanda</p>
+                        <p><span class="font-bold">Gaya Arsitektur:</span> Timur Tengah & Eropa</p>
+                        <p><span class="font-bold">Status:</span> Masjid Bersejarah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sejarah -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    Sejarah Masjid
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Masjid Agung Sawahlunto dibangun pada masa pemerintahan kolonial Belanda sebagai tempat ibadah bagi masyarakat Muslim yang bekerja di tambang batubara Ombilin. Arsitekturnya mencerminkan perpaduan budaya Timur Tengah dan Eropa yang khas pada masanya.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Masjid ini telah mengalami beberapa kali renovasi namun tetap mempertahankan keaslian arsitektur aslinya. Hingga kini, masjid ini menjadi salah satu landmark penting di Kota Sawahlunto.
+                </p>
+                <div class="bg-amber-50 p-4 rounded-xl mt-4">
+                    <p class="text-sm text-gray-600 italic">
+                        "Masjid ini menjadi saksi perkembangan Islam di Sawahlunto sejak masa kolonial hingga kini."
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-archway text-amber-600 mr-3"></i>
+                    Arsitektur Unik
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Keunikan Masjid Agung Sawahlunto terletak pada perpaduan arsitektur Timur Tengah dan Eropa. Kubah dan menara bergaya Timur Tengah berpadu dengan struktur bangunan yang dipengaruhi arsitektur kolonial Belanda.
+                </p>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Kubah utama dengan ornamen khas Timur Tengah</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Menara yang menjulang dengan sentuhan arsitektur Eropa</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Jendela-jendela besar dengan ventilasi khas kolonial</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Ornamen kaligrafi Arab yang indah di interior masjid</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Keistimewaan -->
+        <div class="bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-star text-amber-600 mr-3"></i>
+                Keistimewaan Masjid Agung
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-xl shadow-sm">
+                    <div class="text-3xl text-amber-600 mb-3"><i class="fa-solid fa-landmark"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Nilai Sejarah</h3>
+                    <p class="text-gray-600 text-sm">Saksi bisu perkembangan Islam di Sawahlunto sejak era kolonial Belanda.</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-xl shadow-sm">
+                    <div class="text-3xl text-amber-600 mb-3"><i class="fa-solid fa-camera"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Spot Fotografi</h3>
+                    <p class="text-gray-600 text-sm">Arsitektur unik membuat masjid ini menjadi latar foto yang instagramable.</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-xl shadow-sm">
+                    <div class="text-3xl text-amber-600 mb-3"><i class="fa-solid fa-people-group"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Pusat Kegiatan</h3>
+                    <p class="text-gray-600 text-sm">Tempat berbagai kegiatan keagamaan dan sosial masyarakat Sawahlunto.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informasi Kunjungan -->
+        <div class="bg-gray-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-400 mr-3"></i>
+                Informasi Kunjungan
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-4 rounded-xl">
+                    <div class="text-amber-400 text-2xl mb-2"><i class="fa-regular fa-clock"></i></div>
+                    <h3 class="font-bold text-sm">Waktu Terbaik</h3>
+                    <p class="text-gray-300 text-sm">Pagi atau sore hari untuk foto terbaik</p>
+                </div>
+                
+                <div class="bg-gray-800 p-4 rounded-xl">
+                    <div class="text-amber-400 text-2xl mb-2"><i class="fa-solid fa-ticket"></i></div>
+                    <h3 class="font-bold text-sm">HTM</h3>
+                    <p class="text-gray-300 text-sm">Gratis (untuk wisatawan)</p>
+                </div>
+                
+                <div class="bg-gray-800 p-4 rounded-xl">
+                    <div class="text-amber-400 text-2xl mb-2"><i class="fa-solid fa-clock"></i></div>
+                    <h3 class="font-bold text-sm">Jam Operasional</h3>
+                    <p class="text-gray-300 text-sm">24 jam untuk ibadah</p>
+                </div>
+                
+                <div class="bg-gray-800 p-4 rounded-xl">
+                    <div class="text-amber-400 text-2xl mb-2"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3 class="font-bold text-sm">Lokasi</h3>
+                    <p class="text-gray-300 text-sm">Pusat Kota Sawahlunto</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeri Foto -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-camera-retro text-amber-600 mr-3"></i>
+            Galeri Foto
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <img src="images/masjid-agung1.jpg" alt="Masjid Agung 1" class="rounded-lg shadow-md h-40 w-full object-cover hover:scale-105 transition duration-300">
+            <img src="images/masjid-agung2.jpeg" alt="Masjid Agung 2" class="rounded-lg shadow-md h-40 w-full object-cover hover:scale-105 transition duration-300">
+            <img src="images/masjid-agung5.jpg" alt="Masjid Agung 3" class="rounded-lg shadow-md h-40 w-full object-cover hover:scale-105 transition duration-300">
+            <img src="images/masjid-agung4.webp" alt="Masjid Agung 4" class="rounded-lg shadow-md h-40 w-full object-cover hover:scale-105 transition duration-300">
+        </div>
+
+        <!-- Peta Lokasi Sederhana -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Masjid Agung
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="objek-wisata.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Objek Wisata
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Wisata Religi Bersejarah</p>
+            <p class="mt-2">Masjid Agung Sawahlunto - Ikon Religi Kota Warisan</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

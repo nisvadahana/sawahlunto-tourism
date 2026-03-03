@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atraksi Wisata Sawahlunto - Pesona Kota Warisan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .atraksi-card {
+            transition: all 0.3s ease;
+        }
+        .atraksi-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="atraksi.html" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-mountain-sun"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-lg">Atraksi Wisata Sawahlunto</h1>
+            <p class="text-xl max-w-3xl mx-auto">Jelajahi Pesona Kota Warisan: Dari Sejarah Tambang hingga Keindahan Alam</p>
+            <div class="w-24 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Statistik Cepat -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-landmark"></i></div>
+                <div class="text-3xl font-bold text-gray-800">6</div>
+                <div class="text-gray-600">Wisata Sejarah</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-mountain"></i></div>
+                <div class="text-3xl font-bold text-gray-800">5</div>
+                <div class="text-gray-600">Wisata Alam</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-tree"></i></div>
+                <div class="text-3xl font-bold text-gray-800">3</div>
+                <div class="text-gray-600">Wisata Keluarga</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-camera"></i></div>
+                <div class="text-3xl font-bold text-gray-800">100+</div>
+                <div class="text-gray-600">Spot Foto</div>
+            </div>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Sawahlunto, kota pusaka yang kaya akan sejarah pertambangan batubara, menawarkan berbagai atraksi wisata menarik bagi pengunjung. Dari situs warisan dunia UNESCO, museum bersejarah, hingga keindahan alam yang memukau, setiap sudut kota ini menyimpan cerita dan pesona tersendiri. Jelajahi berbagai atraksi berikut untuk pengalaman tak terlupakan di Sawahlunto.
+            </p>
+        </div>
+
+      <!-- ========== WISATA SEJARAH & BUDAYA ========== -->
+<h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+    <i class="fa-solid fa-landmark text-amber-600 mr-3 text-4xl"></i>
+    🏛️ Wisata Sejarah & Budaya
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+    <!-- Tambang Batubara Ombilin / Lubang Mbah Soero -->
+    <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <div class="h-48 bg-amber-200 flex items-center justify-center">
+            <i class="fa-solid fa-helmet-safety text-6xl text-amber-600"></i>
+        </div>
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+                <h3 class="font-bold text-xl">Tambang Batubara Ombilin</h3>
+                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">UNESCO</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-3">Terowongan, membuat jenis tambang, mengangkat batu bara dari Sawahlunto ke Pelabuhan, rel kereta tua, dan bangunan kolonial.</p>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Pusat Kota Sawahlunto</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-600">⭐ 4.9</span>
+                <a href="tambang-ombilin.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Museum Kereta Api Sawahlunto -->
+    <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <div class="h-48 bg-amber-200 flex items-center justify-center">
+            <i class="fa-solid fa-train text-6xl text-amber-600"></i>
+        </div>
+        <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Museum Kereta Api Sawahlunto</h3>
+            <p class="text-gray-600 text-sm mb-3">Menampilkan lokomotif tua "Mak Itam" dan sejarah kereta api yang dulu dipakai mengangkut batu bara.</p>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Stasiun Sawahlunto</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-600">⭐ 4.7</span>
+                <a href="museum-kereta-api.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Museum Goedang Ransoem -->
+    <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <div class="h-48 bg-amber-200 flex items-center justify-center">
+            <i class="fa-solid fa-utensils text-6xl text-amber-600"></i>
+        </div>
+        <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Museum Goedang Ransoem</h3>
+            <p class="text-gray-600 text-sm mb-3">Dahulu dapur besar yang memasok makanan untuk pekerja tambang, kini museum dengan koleksi artefak kolonial.</p>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Jalan Ahmad Yani</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-600">⭐ 4.5</span>
+                <a href="museum-goedang-ransoem.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gedung Pusat Kebudayaan Sawahlunto -->
+    <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <div class="h-48 bg-amber-200 flex items-center justify-center">
+            <i class="fa-solid fa-building-columns text-6xl text-amber-600"></i>
+        </div>
+        <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Gedung Pusat Kebudayaan</h3>
+            <p class="text-gray-600 text-sm mb-3">Gedung bersejarah bekas rumah bola pejabat Belanda, kini jadi tempat pertunjukan budaya dan pameran.</p>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Kota Tua Sawahlunto</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-600">⭐ 4.6</span>
+                <a href="gedung-pusat-kebudayaan.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Makam Belanda Sawahlunto -->
+    <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <div class="h-48 bg-amber-200 flex items-center justify-center">
+            <i class="fa-solid fa-skull text-6xl text-amber-600"></i>
+        </div>
+        <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Makam Belanda Sawahlunto</h3>
+            <p class="text-gray-600 text-sm mb-3">Kawasan pemakaman tua dengan nisan bergaya Eropa yang unik, sering jadi spot foto dan bagian dari sejarah kolonial kota.</p>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Kec. Lembah Segar</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-600">⭐ 4.0</span>
+                <a href="makam-belanda.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Masjid Agung Sawahlunto -->
+    <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <div class="h-48 bg-amber-200 flex items-center justify-center">
+            <i class="fa-solid fa-mosque text-6xl text-amber-600"></i>
+        </div>
+        <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Masjid Agung Sawahlunto</h3>
+            <p class="text-gray-600 text-sm mb-3">Masjid bersejarah dengan arsitektur unik perpaduan Timur Tengah dan Eropa, ikon religi Kota Sawahlunto.</p>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Pusat Kota Sawahlunto</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-600">⭐ 4.6</span>
+                <a href="masjid-agung.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- ========== WISATA ALAM & PANORAMA ========== -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-mountain-sun text-amber-600 mr-3 text-4xl"></i>
+            🌄 Wisata Alam & Panorama
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Danau Biru -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-water text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Danau Biru</h3>
+                    <p class="text-gray-600 text-sm mb-3">Kolam bekas galian tambang yang kini jadi danau cantik dengan air berwarna biru jernih, cocok untuk foto pemandangan dan santai.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Kelurahan Pasar</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.9</span>
+                        <a href="danau-biru.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danau Kandi -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-water text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Danau Kandi</h3>
+                    <p class="text-gray-600 text-sm mb-3">Danau alami dengan panorama perbukitan hijau dan kegiatan seperti perahu, cocok untuk rekreasi keluarga.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Kec. Lembah Segar</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.7</span>
+                       <a href="danau-kandi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                       </div>
+                </div>
+            </div>
+
+            <!-- Puncak Cemara City View -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-mountain text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Puncak Cemara</h3>
+                    <p class="text-gray-600 text-sm mb-3">Bukit dengan pemandangan kota Sawahlunto dari atas, sangat cantik saat matahari terbenam dan untuk foto panorama.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Bukit Cemara</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.6</span>
+                        <a href="puncak-cemara.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puncak Polan -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-mountain text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Puncak Polan</h3>
+                    <p class="text-gray-600 text-sm mb-3">Spot di ketinggian untuk melihat seluruh kota di bawah dan sering jadi lokasi untuk paralayang.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Kec. Talawi</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.5</span>
+                       <a href="puncak-polan.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                       </div>
+                </div>
+            </div>
+
+            <!-- Puncak Batu Runcing -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-mountain text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Puncak Batu Runcing</h3>
+                    <p class="text-gray-600 text-sm mb-3">Formasi batuan unik yang jadi daya tarik alam dan foto estetik di kawasan Silungkang.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Silungkang</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.4</span>
+                        <a href="puncak-batu-runcing.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== WISATA KELUARGA & HIBURAN ========== -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-family text-amber-600 mr-3 text-4xl"></i>
+            🎡 Wisata Keluarga & Hiburan
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Waterboom Sawahlunto -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-water-ladder text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Waterboom Sawahlunto</h3>
+                    <p class="text-gray-600 text-sm mb-3">Tempat bermain air dengan berbagai kolam, seluncuran, flying fox, gazebo, area jajanan, cocok untuk liburan keluarga.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Muaro Kalaban</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.5</span>
+                        <a href="waterboom-sawahlunto.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taman Satwa Kandih -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-paw text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Taman Satwa Kandih</h3>
+                    <p class="text-gray-600 text-sm mb-3">Area bekas penambangan yang dikembangkan jadi ruang terbuka hijau, taman satwa, dan area kegiatan outdoor keluarga.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Kandih</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.4</span>
+                        <a href="taman-satwa-kandih.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pacuan Kuda Kandih -->
+            <div class="atraksi-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                <div class="h-48 bg-amber-200 flex items-center justify-center">
+                    <i class="fa-solid fa-horse text-6xl text-amber-600"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Gelanggang Pacuan Kuda</h3>
+                    <p class="text-gray-600 text-sm mb-3">Tempat pacuan kuda terkenal di Sawahlunto, setiap tahunnya acara Sawahlunto Derby menarik banyak pengunjung.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
+                        <span>Kandih</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-amber-600">⭐ 4.3</span>
+                        <a href="pacuan-kuda-kandih.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== SPOT LAINNYA ========== -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-map-pin text-amber-600 mr-3 text-4xl"></i>
+            📍 Spot Lainnya
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-4 mb-12">
+            <div class="bg-amber-50 p-5 rounded-xl">
+                <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-tree"></i></div>
+                <h3 class="font-bold text-lg">Taman Segitiga</h3>
+                <p class="text-gray-600 text-sm">Alun-alun kota yang sering jadi titik berkumpul masyarakat dan wisatawan.</p>
+            </div>
+            <div class="bg-amber-50 p-5 rounded-xl">
+                <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-industry"></i></div>
+                <h3 class="font-bold text-lg">Silo & Gudang Batu Bara</h3>
+                <p class="text-gray-600 text-sm">Struktur lama penyimpanan batu bara yang jadi latar foto menarik.</p>
+            </div>
+            <div class="bg-amber-50 p-5 rounded-xl">
+                <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-city"></i></div>
+                <h3 class="font-bold text-lg">Kota Tua Sawahlunto</h3>
+                <p class="text-gray-600 text-sm">Kawasan dengan deretan bangunan kolonial yang Instagramable.</p>
+            </div>
+        </div>
+
+        <!-- Paket Wisata Rekomendasi -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-star text-amber-200 mr-3"></i>
+                Paket Wisata Rekomendasi
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Paket Heritage</h3>
+                    <p class="text-amber-100 text-sm mb-3">Tambang Ombilin - Museum Kereta Api - Goedang Ransoem - Kota Tua - Masjid Agung</p>
+                    <p class="text-amber-300 font-bold">⏱️ 4-5 jam</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Paket Alam</h3>
+                    <p class="text-amber-100 text-sm mb-3">Danau Biru - Danau Kandi - Puncak Cemara - Puncak Polan - Batu Runcing</p>
+                    <p class="text-amber-300 font-bold">⏱️ 5-6 jam</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Paket Keluarga</h3>
+                    <p class="text-amber-100 text-sm mb-3">Waterboom - Taman Satwa - Pacuan Kuda - Taman Segitiga - Kuliner</p>
+                    <p class="text-amber-300 font-bold">⏱️ 1 hari penuh</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Peta Sebaran Atraksi Wisata
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="index.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Atraksi Wisata</p>
+            <p class="mt-2">Jelajahi sejarah, nikmati alam, abadikan momen di Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

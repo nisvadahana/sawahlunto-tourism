@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sate Mak Syukur - Kuliner Khas Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="index.html#kuliner" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/sate-mak-syukur.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-utensils"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Sate Mak Syukur</h1>
+            <p class="text-xl max-w-3xl">Kuliner Legendaris Khas Sawahlunto</p>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Pengantar -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-utensils text-amber-600 mr-3"></i>
+                        Sate Mak Syukur
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Sate Mak Syukur adalah salah satu kuliner legendaris yang paling terkenal di Sawahlunto. Sate ini menyajikan daging sapi pilihan dengan bumbu khas yang telah diwariskan secara turun-temurun.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Berbeda dengan sate pada umumnya, Sate Mak Syukur memiliki cita rasa yang kaya akan rempah-rempah khas Minangkabau, dengan tekstur daging yang empuk dan bumbu kacang yang meresap sempurna.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-amber-50 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-star"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Cepat</h3>
+                    <div class="space-y-2 text-sm">
+                        <p><span class="font-bold">📍 Lokasi:</span> Pasar Raya Sawahlunto</p>
+                        <p><span class="font-bold">⏰ Jam Buka:</span> 17.00 - 23.00 WIB</p>
+                        <p><span class="font-bold">💰 Harga:</span> Rp 25.000 - Rp 50.000</p>
+                        <p><span class="font-bold">⭐ Rating:</span> 4.8/5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sejarah & Keunikan -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    Sejarah Sate Mak Syukur
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Sate Mak Syukur telah berdiri sejak tahun 1980-an dan menjadi salah satu ikon kuliner Sawahlunto. Resepnya diciptakan oleh Mak Syukur, seorang pedagang sate asli Minangkabau yang ingin menghadirkan sate dengan cita rasa khas daerah.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Warung sate ini awalnya hanya berupa gerobak kecil di pinggir jalan, namun kini telah menjadi tujuan wajib bagi wisatawan yang berkunjung ke Sawahlunto.
+                </p>
+                <div class="bg-amber-50 p-4 rounded-xl mt-4">
+                    <p class="text-sm text-gray-600 italic">
+                        "Rahasia kelezatan Sate Mak Syukur terletak pada bumbu kacang yang dimasak selama berjam-jam dan daging sapi yang dimarinasi dengan rempah pilihan."
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-leaf text-amber-600 mr-3"></i>
+                    Keunikan & Cita Rasa
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Bumbu Kacang Spesial:</span> Kacang tanah pilihan digiling halus dengan campuran rempah rahasia.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Daging Empuk:</span> Menggunakan daging sapi bagian has dalam yang dimarinasi semalaman.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Arang Bakar:</span> Dipanggang dengan arang batok kelapa untuk aroma yang khas.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Ketupat Lontong:</span> Disajikan dengan ketupat atau lontong hangat buatan sendiri.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Sambal Khas:</span> Tersedia sambal hijau dan sambal merah khas Minang.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu & Harga -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-clipboard-list text-amber-600 mr-3"></i>
+                Menu & Harga
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <table class="w-full">
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Sate Daging Sapi</td>
+                            <td class="py-2 text-right">Rp 25.000 (10 tusuk)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Sate Campur (Daging + Lemak)</td>
+                            <td class="py-2 text-right">Rp 25.000 (10 tusuk)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Sate Paru</td>
+                            <td class="py-2 text-right">Rp 25.000 (10 tusuk)</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Sate Hati</td>
+                            <td class="py-2 text-right">Rp 25.000 (10 tusuk)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table class="w-full">
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Nasi / Lontong</td>
+                            <td class="py-2 text-right">Rp 5.000</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Es Teh Manis</td>
+                            <td class="py-2 text-right">Rp 5.000</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Es Jeruk</td>
+                            <td class="py-2 text-right">Rp 8.000</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Teh Hangat</td>
+                            <td class="py-2 text-right">Rp 4.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informasi Praktis -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-200 mr-3"></i>
+                Informasi Praktis
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-regular fa-clock"></i></div>
+                    <h3 class="font-bold text-sm">Jam Buka</h3>
+                    <p class="text-amber-100 text-sm">17.00 - 23.00 WIB<br>(Jumat tutup)</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3 class="font-bold text-sm">Alamat</h3>
+                    <p class="text-amber-100 text-sm">Jl. Pasar Raya No. 45<br>Sawahlunto</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-phone"></i></div>
+                    <h3 class="font-bold text-sm">Kontak</h3>
+                    <p class="text-amber-100 text-sm">0812-3456-7890<br>(Mak Syukur)</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-car"></i></div>
+                    <h3 class="font-bold text-sm">Parkir</h3>
+                    <p class="text-amber-100 text-sm">Luas, tersedia<br>untuk motor & mobil</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Pengunjung -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-star text-amber-500 mr-3"></i>
+                Review Pengunjung
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <div class="flex items-center gap-1 text-amber-500 mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm italic">"Sate terenak yang pernah saya coba! Bumbu kacangnya legit, dagingnya empuk. Wajib dicoba kalau ke Sawahlunto."</p>
+                    <p class="text-gray-500 text-xs mt-2">- Andi, Jakarta</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <div class="flex items-center gap-1 text-amber-500 mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm italic">"Sudah 20 tahun langganan, rasanya tidak pernah berubah. Maknyuss!"</p>
+                    <p class="text-gray-500 text-xs mt-2">- Rina, Padang</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <div class="flex items-center gap-1 text-amber-500 mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm italic">"Harganya terjangkau, porsinya banyak. Cocok untuk makan malam bersama keluarga."</p>
+                    <p class="text-gray-500 text-xs mt-2">- Budi, Bandung</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Sate Mak Syukur
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">📍 Jl. Pasar Raya No. 45, Pasar Atas, Sawahlunto (tepat di sebelah Masjid Agung)</p>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="index.html#kuliner" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Kuliner
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Kuliner Khas</p>
+            <p class="mt-2">Nikmati kelezatan Sate Mak Syukur, legenda kuliner Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

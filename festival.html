@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Sawahlunto - Kalender Acara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .event-card {
+            transition: all 0.3s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #f59e0b;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% - 15px);
+            background: #e5e7eb;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="index.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/foto4.jpeg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 drop-shadow-2xl">Festival</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mb-6">Kalender Acara Tahunan Kota Sawahlunto</p>
+            <div class="flex gap-4">
+                <span class="bg-amber-500 text-gray-900 px-6 py-2 rounded-full font-bold">5+ Festival</span>
+                <span class="bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full">Sepanjang Tahun</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Statistik Festival -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-regular fa-calendar"></i></div>
+                <div class="text-3xl font-bold text-gray-800">5+</div>
+                <div class="text-gray-600">Festival Tahunan</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-music"></i></div>
+                <div class="text-3xl font-bold text-gray-800">Music</div>
+                <div class="text-gray-600">Festival</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-flag"></i></div>
+                <div class="text-3xl font-bold text-gray-800">Carnaval</div>
+                <div class="text-gray-600">Budaya</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-horse"></i></div>
+                <div class="text-3xl font-bold text-gray-800">Derby</div>
+                <div class="text-gray-600">Sports</div>
+            </div>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Sawahlunto tidak hanya kaya akan warisan tambang, tetapi juga memiliki tradisi budaya yang hidup dan beragam. 
+                Sepanjang tahun, berbagai festival dan acara budaya digelar untuk merayakan sejarah, seni, dan kearifan lokal masyarakat 
+                kota pusaka ini. Dari festival musik hingga karnaval budaya, setiap acara menawarkan pengalaman unik bagi pengunjung.
+            </p>
+        </div>
+
+        <!-- Festival Utama -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-star text-amber-500 mr-3"></i>
+            Festival & Acara 2025-2026
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Sawahlunto International Music Festival -->
+            <div class="event-card bg-white rounded-2xl overflow-hidden shadow-lg border-t-4 border-amber-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">FESTIVAL</span>
+                        <span class="text-2xl text-amber-600"><i class="fa-regular fa-calendar-check"></i></span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Sawahlunto International Music Festival</h3>
+                    <p class="text-gray-600 mb-4">Three-day music festival featuring local and international artists.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-calendar-day text-amber-600 w-5"></i>
+                            <span>📅 7 November 2025</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-regular fa-clock text-amber-600 w-5"></i>
+                            <span>🏆 17.16.00 - Selesai</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-location-dot text-amber-600 w-5"></i>
+                            <span>🌐 Tanah Lapang Sawahlunto</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-ticket text-amber-600 w-5"></i>
+                            <span>💵 Rp 5.000</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-amber-600 font-medium text-sm hover:underline">Events freeEntry →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sawahlunto International Songket Silungkang Carnaval (SISSCa) -->
+            <div class="event-card bg-white rounded-2xl overflow-hidden shadow-lg border-t-4 border-amber-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">CARNAVAL</span>
+                        <span class="text-2xl text-amber-600"><i class="fa-regular fa-calendar-check"></i></span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Sawahlunto International Songket Silungkang Carnaval (SISSCa)</h3>
+                    <p class="text-gray-600 mb-4">Sawahlunto International Songket Silungkang Carnaval</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-calendar-day text-amber-600 w-5"></i>
+                            <span>📅 5 September 2025</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-regular fa-clock text-amber-600 w-5"></i>
+                            <span>🏆 17.19.00 - Selesai</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-location-dot text-amber-600 w-5"></i>
+                            <span>🌐 Lapangan Ombilin Sawahlunto</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-ticket text-amber-600 w-5"></i>
+                            <span>💵 Rp 10.000</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a href="#" class="text-amber-600 font-medium text-sm hover:underline">Events freeEntry →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Derby Sawahlunto -->
+            <div class="event-card bg-white rounded-2xl overflow-hidden shadow-lg border-t-4 border-amber-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">SPORTS</span>
+                        <span class="text-2xl text-amber-600"><i class="fa-regular fa-calendar-check"></i></span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Derby Sawahlunto</h3>
+                    <p class="text-gray-600 mb-4">Derby Sawahlunto - Event pacuan kuda tahunan</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-calendar-day text-amber-600 w-5"></i>
+                            <span>📅 1 Desember 2025</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-regular fa-clock text-amber-600 w-5"></i>
+                            <span>🏆 17.57.00 - Selesai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HUT Sawahlunto -->
+            <div class="event-card bg-white rounded-2xl overflow-hidden shadow-lg border-t-4 border-amber-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">EVENT</span>
+                        <span class="text-2xl text-amber-600"><i class="fa-regular fa-calendar-check"></i></span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">HUT Sawahlunto</h3>
+                    <p class="text-gray-600 mb-4">Hari Ulang Tahun Kota Sawahlunto</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-solid fa-calendar-day text-amber-600 w-5"></i>
+                            <span>📅 1 Desember 2026</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-500">
+                            <i class="fa-regular fa-clock text-amber-600 w-5"></i>
+                            <span>🏆 16.00.00 - Selesai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Upcoming Events -->
+<h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+    <i class="fa-solid fa-calendar-days text-amber-500 mr-3"></i>
+    Upcoming Events
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-12">
+    <!-- HUT Sawahlunto 2026 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4">
+        <div class="bg-amber-100 rounded-full p-3 text-amber-600">
+            <i class="fa-solid fa-cake-candles text-xl"></i>
+        </div>
+        <div>
+            <h3 class="font-bold text-lg">HUT Sawahlunto ke-138</h3>
+            <p class="text-gray-600">Perayaan Hari Ulang Tahun Kota Sawahlunto</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                <span><i class="fa-regular fa-calendar mr-1"></i> 1 Desember 2026</span>
+                <span><i class="fa-regular fa-clock mr-1"></i> 16.00 WIB</span>
+            </div>
+            <div class="mt-2">
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">GRATIS</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Festival Budaya (contoh event lain 2026) -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4">
+        <div class="bg-amber-100 rounded-full p-3 text-amber-600">
+            <i class="fa-solid fa-flag text-xl"></i>
+        </div>
+        <div>
+            <h3 class="font-bold text-lg">Festival Budaya Sawahlunto</h3>
+            <p class="text-gray-600">Pertunjukan seni dan budaya tradisional</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                <span><i class="fa-regular fa-calendar mr-1"></i> 15-17 Agustus 2026</span>
+                <span><i class="fa-regular fa-clock mr-1"></i> 09.00 - 22.00 WIB</span>
+            </div>
+            <div class="mt-2">
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">GRATIS</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Informasi Praktis -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-600 mr-3"></i>
+                Informasi Praktis
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center"><i class="fa-solid fa-ticket text-amber-600 mr-2"></i> Tiket Masuk</h3>
+                    <p class="text-gray-600 text-sm">Music Festival: Rp 5.000<br>Songket Carnaval: Rp 10.000<br>Derby & HUT Kota: Gratis</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center"><i class="fa-solid fa-phone text-amber-600 mr-2"></i> Kontak Panitia</h3>
+                    <p class="text-gray-600 text-sm">Dinas Pariwisata Sawahlunto<br>(0754) 123456<br>festival@sawahlunto.go.id</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="index.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Pesona Kota Warisan</p>
+            <p class="mt-2">Jelajahi sejarah, nikmati alam, abadikan momen di Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

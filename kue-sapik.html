@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kue Sapik - Kue Tradisional Khas Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="index.html#kuliner" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/kue-sapik.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-cake"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Kue Sapik</h1>
+            <p class="text-xl max-w-3xl">Kue Tradisional Khas Sawahlunto yang Legendaris</p>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Pengantar -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-cake text-amber-600 mr-3"></i>
+                        Kue Sapik
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Kue Sapik adalah kue tradisional khas Sawahlunto yang berbentuk pipih dan tipis, terbuat dari campuran tepung beras, santan, dan gula merah. Kue ini memiliki cita rasa manis dan gurih dengan tekstur renyah yang unik.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Nama "Sapik" berasal dari bahasa setempat yang berarti "dijepit", merujuk pada proses pembuatannya yang menggunakan cetakan besi yang dijepit dan dipanaskan di atas bara api. Kue ini menjadi salah satu oleh-oleh khas yang wajib dibawa saat berkunjung ke Sawahlunto.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-amber-50 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-star"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Cepat</h3>
+                    <div class="space-y-2 text-sm">
+                        <p><span class="font-bold">📍 Lokasi:</span> Pasar Pusat Oleh-Oleh Sawahlunto</p>
+                        <p><span class="font-bold">⏰ Jam Buka:</span> 08.00 - 18.00 WIB</p>
+                        <p><span class="font-bold">💰 Harga:</span> Rp 25.000 - Rp 50.000</p>
+                        <p><span class="font-bold">⭐ Rating:</span> 4.7/5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sejarah & Filosofi -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    Sejarah Kue Sapik
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Kue Sapik telah ada sejak masa kolonial Belanda dan menjadi kue tradisional yang turun-temurun dibuat oleh masyarakat Sawahlunto. Kue ini awalnya dibuat oleh para ibu rumah tangga sebagai camilan sehari-hari dan untuk acara-acara adat.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Seiring perkembangan zaman, Kue Sapik mulai diproduksi secara lebih luas dan menjadi salah satu ikon kuliner Sawahlunto yang dikenal hingga ke luar daerah.
+                </p>
+                <div class="bg-amber-50 p-4 rounded-xl mt-4">
+                    <p class="text-sm text-gray-600 italic">
+                        "Kue Sapik melambangkan kesederhanaan dan ketelitian. Proses menjepit adonan membutuhkan kesabaran agar menghasilkan kue yang sempurna."
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-mortar-pestle text-amber-600 mr-3"></i>
+                    Bahan-Bahan
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Tepung Beras:</span> Bahan dasar yang memberikan tekstur renyah.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Santan Kelapa:</span> Memberikan rasa gurih yang khas.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Gula Merah:</span> Sumber rasa manis alami dan warna cokelat.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Garam:</span> Penyeimbang rasa.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Daun Pandan:</span> Memberikan aroma harum alami.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Proses Pembuatan -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-fire text-amber-600 mr-3"></i>
+                Proses Pembuatan Tradisional
+            </h2>
+            
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-amber-600 font-bold text-xl">1</div>
+                    <h3 class="font-bold text-sm">Mencampur Adonan</h3>
+                    <p class="text-gray-500 text-xs">Tepung beras, santan, gula, dan garam dicampur hingga rata</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-amber-600 font-bold text-xl">2</div>
+                    <h3 class="font-bold text-sm">Memanaskan Cetakan</h3>
+                    <p class="text-gray-500 text-xs">Cetakan besi dipanaskan di atas bara api</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-amber-600 font-bold text-xl">3</div>
+                    <h3 class="font-bold text-sm">Menjepit Adonan</h3>
+                    <p class="text-gray-500 text-xs">Adonan dituang ke cetakan lalu dijepit dan dipanggang</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-amber-100 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 text-amber-600 font-bold text-xl">4</div>
+                    <h3 class="font-bold text-sm">Pendinginan</h3>
+                    <p class="text-gray-500 text-xs">Kue yang matang diangkat dan didinginkan sebelum dikemas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Varian Rasa & Harga -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-clipboard-list text-amber-600 mr-3"></i>
+                Varian Rasa & Harga
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <table class="w-full">
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Kue Sapik Original (Gula Merah)</td>
+                            <td class="py-2 text-right">Rp 25.000/200gr</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Kue Sapik Pandan</td>
+                            <td class="py-2 text-right">Rp 27.000/200gr</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Kue Sapik Coklat</td>
+                            <td class="py-2 text-right">Rp 30.000/200gr</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Kue Sapik Keju</td>
+                            <td class="py-2 text-right">Rp 32.000/200gr</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table class="w-full">
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Paket Hemat (3 rasa)</td>
+                            <td class="py-2 text-right">Rp 75.000/600gr</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Paket Keluarga (6 rasa)</td>
+                            <td class="py-2 text-right">Rp 140.000/1.2kg</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-bold">Kemasan Hadiah</td>
+                            <td class="py-2 text-right">Rp 50.000 - Rp 100.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="text-gray-500 text-sm mt-4 italic">* Tersedia juga dalam kemasan toples dan besek untuk oleh-oleh</p>
+        </div>
+
+        <!-- Informasi Praktis -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-200 mr-3"></i>
+                Tempat Membeli Kue Sapik
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-regular fa-clock"></i></div>
+                    <h3 class="font-bold text-sm">Jam Buka</h3>
+                    <p class="text-amber-100 text-sm">08.00 - 18.00 WIB<br>Buka setiap hari</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3 class="font-bold text-sm">Alamat</h3>
+                    <p class="text-amber-100 text-sm">Pasar Pusat Oleh-Oleh<br>Jl. Pasar Atas No. 10, Sawahlunto</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-phone"></i></div>
+                    <h3 class="font-bold text-sm">Kontak</h3>
+                    <p class="text-amber-100 text-sm">0812-3456-7890<br>(Ibu Ros, produsen)</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-truck"></i></div>
+                    <h3 class="font-bold text-sm">Pengiriman</h3>
+                    <p class="text-amber-100 text-sm">Bisa dikirim ke luar kota<br>(via JNE/J&T)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Pengunjung -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-star text-amber-500 mr-3"></i>
+                Review Pengunjung
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <div class="flex items-center gap-1 text-amber-500 mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm italic">"Kue Sapik ini enak banget! Renyah, manisnya pas, cocok buat teman minum teh. Wajib beli kalau ke Sawahlunto."</p>
+                    <p class="text-gray-500 text-xs mt-2">- Sarah, Jakarta</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <div class="flex items-center gap-1 text-amber-500 mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm italic">"Saya beli untuk oleh-oleh keluarga di kampung. Semua suka, apalagi yang rasa pandan. Kemasannya juga cantik."</p>
+                    <p class="text-gray-500 text-xs mt-2">- Budi, Padang</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl">
+                    <div class="flex items-center gap-1 text-amber-500 mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm italic">"Harganya terjangkau, rasanya autentik. Saya selalu beli setiap kali berkunjung ke Sawahlunto."</p>
+                    <p class="text-gray-500 text-xs mt-2">- Rina, Pekanbaru</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fakta Menarik -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-lightbulb text-amber-600 mr-3"></i>
+                Fakta Menarik Kue Sapik
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">#1</span>
+                    <p class="text-gray-700 text-sm">Kue Sapik sudah ada sejak masa kolonial Belanda dan masih bertahan hingga kini.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">#2</span>
+                    <p class="text-gray-700 text-sm">Cetakan besi yang digunakan masih banyak yang merupakan warisan turun-temurun.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">#3</span>
+                    <p class="text-gray-700 text-sm">Kue Sapik bisa bertahan hingga 2-3 minggu jika disimpan dalam wadah kedap udara.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Pasar Pusat Oleh-Oleh
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">📍 Jl. Pasar Atas No. 10, Pasar Atas, Sawahlunto (tepat di sebelah Masjid Agung)</p>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="index.html#kuliner" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Kuliner
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Kuliner Tradisional</p>
+            <p class="mt-2">Nikmati kelezatan Kue Sapik, oleh-oleh khas Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

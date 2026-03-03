@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makam Belanda Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="objek-wisata.html" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="atraksi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/makam-belanda.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-skull"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Makam Belanda</h1>
+            <p class="text-xl max-w-3xl">Sawahlunto</p>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Makam Belanda Sawahlunto</h2>
+            <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                Makam Belanda Sawahlunto adalah kawasan pemakaman tua yang terletak di Kecamatan Lembah Segar, Sawahlunto. Di sini terdapat makam-makam warga Belanda dan Eropa lainnya yang meninggal pada masa kolonial.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Nisan-nisan di pemakaman ini memiliki gaya arsitektur Eropa yang unik dan menjadi saksi bisu sejarah kolonial di kota tambang Sawahlunto. Tempat ini sering menjadi spot foto bagi pengunjung yang tertarik dengan sejarah.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 mt-6">
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-regular fa-clock mr-1"></i> 24 Jam
+                </span>
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-solid fa-location-dot mr-1"></i> Kec. Lembah Segar
+                </span>
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-solid fa-ticket mr-1"></i> Gratis
+                </span>
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-solid fa-star mr-1"></i> 4.0/5
+                </span>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="objek-wisata.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Objek Wisata
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danau Biru Sawahlunto - Pesona Alam Kota Warisan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="atraksi.html" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="atraksi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/foto2.jpeg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-water"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Danau Biru</h1>
+            <p class="text-xl max-w-3xl">Keindahan Alam dari Bekas Galian Tambang Sawahlunto</p>
+            <div class="flex gap-4 mt-4">
+                <span class="bg-amber-500 text-gray-900 px-6 py-2 rounded-full font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-star"></i> 4.9/5
+                </span>
+                <span class="bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full">Destinasi Favorit</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Danau Biru Sawahlunto</h2>
+            <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                Danau Biru adalah salah satu destinasi wisata alam paling populer di Sawahlunto. Danau ini terbentuk dari bekas galian tambang batubara yang kemudian terisi air dan berubah menjadi danau dengan air berwarna biru jernih yang memukau.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Keunikan Danau Biru terletak pada warna airnya yang biru kehijauan, hasil dari proses kimiawi bekas tambang. Pemandangan danau yang dikelilingi perbukitan hijau menjadikannya spot favorit untuk berfoto dan bersantai menikmati alam.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 mt-6">
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-regular fa-clock mr-1"></i> 08.00 - 18.00 WIB
+                </span>
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-solid fa-location-dot mr-1"></i> Kelurahan Pasar, Sawahlunto
+                </span>
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-solid fa-ticket mr-1"></i> Rp 5.000
+                </span>
+                <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fa-solid fa-star mr-1"></i> 4.9/5
+                </span>
+            </div>
+        </div>
+
+        <!-- Informasi Tambahan -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Sejarah Danau Biru -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    Sejarah Danau Biru
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Danau Biru dulunya adalah lokasi penambangan batubara terbuka yang beroperasi pada masa kolonial Belanda. Setelah aktivitas pertambangan berhenti, lubang galian yang dalam terisi air secara alami dari air hujan dan sumber air bawah tanah.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Warna biru pada air danau disebabkan oleh kandungan mineral tertentu yang tercampur dalam air, menciptakan pemandangan yang unik dan instagramable.
+                </p>
+            </div>
+
+            <!-- Aktivitas yang Bisa Dilakukan -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-person-walking text-amber-600 mr-3"></i>
+                    Aktivitas Wisata
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Berfoto dengan latar danau biru yang memukau</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Bersantai di gazebo sambil menikmati pemandangan</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Berjalan-jalan mengelilingi danau</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Menikmati kuliner di warung sekitar danau</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span>Menyaksikan matahari terbenam</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-3"></i>
+                Fasilitas di Danau Biru
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-car"></i></div>
+                    <span class="text-sm font-medium">Area Parkir</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-camera"></i></div>
+                    <span class="text-sm font-medium">Spot Foto</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-store"></i></div>
+                    <span class="text-sm font-medium">Warung Makan</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-toilet"></i></div>
+                    <span class="text-sm font-medium">Toilet</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-mosque"></i></div>
+                    <span class="text-sm font-medium">Mushola</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-tree"></i></div>
+                    <span class="text-sm font-medium">Gazebo</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-binoculars"></i></div>
+                    <span class="text-sm font-medium">Area Pandang</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-wifi"></i></div>
+                    <span class="text-sm font-medium">WiFi Area</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Berkunjung -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-lightbulb text-amber-200 mr-3"></i>
+                Tips Berkunjung ke Danau Biru
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <span class="font-bold text-amber-300 block mb-1">⏰ Waktu Terbaik</span>
+                    <p class="text-sm">Sore hari (16.00-18.00) untuk menikmati sunset dan warna danau yang paling cantik.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <span class="font-bold text-amber-300 block mb-1">📷 Fotografi</span>
+                    <p class="text-sm">Bawa kamera dengan lensa wide untuk menangkap panorama danau dan perbukitan.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <span class="font-bold text-amber-300 block mb-1">👗 Pakaian</span>
+                    <p class="text-sm">Gunakan pakaian nyaman dan warna cerah untuk kontras dengan latar danau biru.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <span class="font-bold text-amber-300 block mb-1">🍜 Kuliner</span>
+                    <p class="text-sm">Coba makanan ringan di warung sekitar danau sambil menikmati pemandangan.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <span class="font-bold text-amber-300 block mb-1">🚗 Transportasi</span>
+                    <p class="text-sm">Gunakan kendaraan pribadi atau ojek lokal karena lokasi agak jauh dari pusat kota.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <span class="font-bold text-amber-300 block mb-1">💡 Keamanan</span>
+                    <p class="text-sm">Ikuti rambu-rambu dan jangan berenang di danau karena kedalaman dan kandungan air.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lokasi & Peta -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Danau Biru
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">📍 Kelurahan Pasar, Kecamatan Lembah Segar, Kota Sawahlunto, Sumatera Barat (sekitar 3 km dari pusat kota)</p>
+        </div>
+
+        <!-- Spot Terdekat -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-location-dot text-amber-600 mr-3"></i>
+                Wisata Terdekat
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="puncak-cemara.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-mountain"></i></div>
+                    <div>
+                        <h3 class="font-bold">Puncak Cemara</h3>
+                        <p class="text-xs text-gray-600">1,5 km dari Danau Biru</p>
+                    </div>
+                </a>
+                
+                <a href="tambang-ombilin.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <div>
+                        <h3 class="font-bold">Tambang Ombilin</h3>
+                        <p class="text-xs text-gray-600">2,5 km dari Danau Biru</p>
+                    </div>
+                </a>
+                
+                <a href="kota-tua-sawahlunto.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-city"></i></div>
+                    <div>
+                        <h3 class="font-bold">Kota Tua</h3>
+                        <p class="text-xs text-gray-600">3 km dari Danau Biru</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="atraksi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Atraksi
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto</p>
+            <p class="mt-2">Jelajahi keindahan Danau Biru, pesona alam Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

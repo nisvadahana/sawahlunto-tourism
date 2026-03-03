@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parai City Garden Hotel - Hotel di Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .rating-star {
+            color: #f59e0b;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="semua-penginapan.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/parai-city-garden.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-hotel"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Parai City Garden Hotel</h1>
+            <p class="text-xl max-w-3xl">Hotel dengan Nuansa Tradisional dan Modern di Sawahlunto</p>
+            <div class="flex gap-4 mt-4">
+                <span class="bg-amber-500 text-gray-900 px-6 py-2 rounded-full font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-star"></i> 7.8/10
+                </span>
+                <span class="bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full">⭐ Hotel Bintang 3</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Informasi Umum & Rating -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-hotel text-amber-600 mr-3"></i>
+                        Parai City Garden Hotel - Sawahlunto
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Parai City Garden Hotel adalah hotel berbintang 3 yang berlokasi di Jalan Bagindo Azizchan, Lembah Segar, Sawahlunto. Hotel ini menawarkan perpaduan nuansa tradisional dan modern dengan fasilitas lengkap untuk kenyamanan tamu [citation:2][citation:3].
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Hotel ini mulai beroperasi pada tahun 2011 dan direnovasi pada tahun 2012. Dengan 41 kamar yang tersedia, hotel ini menjadi pilihan tepat bagi wisatawan yang ingin menjelajahi keindahan Kota Sawahlunto [citation:2].
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-4">
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-regular fa-building"></i> Dibuka: 2011
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-regular fa-door-open"></i> 41 Kamar
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-paint-roller"></i> Renovasi: 2012
+                        </span>
+                    </div>
+                </div>
+                <div class="md:w-1/3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-medal"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Rating Tamu</h3>
+                    <div class="text-center mb-3">
+                        <span class="text-4xl font-bold text-gray-800">7.8</span>
+                        <span class="text-gray-500">/10</span>
+                        <p class="text-sm text-gray-600">Nyaman - 118+ review [citation:3]</p>
+                    </div>
+                    <div class="space-y-2 text-sm border-t border-amber-200 pt-3">
+                        <div class="flex justify-between">
+                            <span>Kebersihan</span>
+                            <span class="font-bold">7.8</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Kenyamanan</span>
+                            <span class="font-bold">7.8</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Lokasi</span>
+                            <span class="font-bold">7.8</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pelayanan</span>
+                            <span class="font-bold">7.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid Info: Lokasi & Kontak -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Lokasi -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-location-dot text-amber-600 mr-3"></i>
+                    Lokasi Hotel
+                </h2>
+                <p class="text-gray-700 mb-3">
+                    <span class="font-bold">Alamat:</span> Jalan Bagindo Azizchan, Lembah Segar, Sawahlunto, Sumatera Barat, Indonesia, 25173 [citation:3]
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Berlokasi di kawasan Lembah Segar, hotel ini mudah diakses dan dekat dengan berbagai fasilitas publik [citation:3].
+                </p>
+                <div class="bg-amber-50 p-4 rounded-xl">
+                    <h3 class="font-bold text-gray-800 mb-2">📍 Tempat Terdekat:</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Masjid Uswatun Hasanah - LDII (kurang dari 100m) [citation:2]
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Perpustakaan Adinegoro (490m) [citation:2]
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Info Box & Lubang Mbah Soero (950m) [citation:2]
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Puncak Polan (2.7km) [citation:2]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kontak & Info Praktis -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-phone text-amber-600 mr-3"></i>
+                    Kontak & Info Praktis
+                </h2>
+                
+                <div class="space-y-3 mb-4">
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-amber-600 w-5"></i>
+                        <span>+62-853-7419-088 [citation:2]</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-regular fa-clock text-amber-600 w-5"></i>
+                        <span>Check-in: 11.00 | Check-out: 12.00 [citation:2]</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-car text-amber-600 w-5"></i>
+                        <span>Parkir gratis tersedia [citation:1][citation:2]</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-plane text-amber-600 w-5"></i>
+                        <span>Layanan antar-jemput bandara [citation:1][citation:2]</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-ban text-amber-600 w-5"></i>
+                        <span>Hewan peliharaan tidak diizinkan [citation:2][citation:4]</span>
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl mt-4">
+                    <h3 class="font-bold text-gray-800 mb-2">⚠️ Perhatian:</h3>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li>• Hotel tidak memiliki lift [citation:2]</li>
+                        <li>• Hati-hati dengan lengkungan pintu masuk (perhatikan untuk membungkuk) [citation:2]</li>
+                        <li>• Smoking hanya di zona yang ditentukan [citation:2]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-3"></i>
+                Fasilitas Hotel
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-wifi"></i></div>
+                    <span class="text-sm font-medium">WiFi Gratis [citation:1]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-car"></i></div>
+                    <span class="text-sm font-medium">Parkir Gratis [citation:1]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-utensils"></i></div>
+                    <span class="text-sm font-medium">Restoran [citation:3]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-mug-saucer"></i></div>
+                    <span class="text-sm font-medium">Sarapan [citation:3]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-spa"></i></div>
+                    <span class="text-sm font-medium">Pijat/Massage [citation:1]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-tree"></i></div>
+                    <span class="text-sm font-medium">Taman [citation:1]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-bicycle"></i></div>
+                    <span class="text-sm font-medium">Sewa Sepeda [citation:3]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-microphone"></i></div>
+                    <span class="text-sm font-medium">Karaoke [citation:2]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-people-group"></i></div>
+                    <span class="text-sm font-medium">Ruang Meeting [citation:3]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-clock"></i></div>
+                    <span class="text-sm font-medium">Resepsionis 24 Jam [citation:1]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-shirt"></i></div>
+                    <span class="text-sm font-medium">Laundry [citation:3]</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-water"></i></div>
+                    <span class="text-sm font-medium">Kolam Renang [citation:4]</span>
+                </div>
+            </div>
+            
+            <p class="text-gray-500 text-sm mt-4">*Beberapa fasilitas mungkin dikenakan biaya tambahan</p>
+        </div>
+
+        <!-- Tipe Kamar -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-bed text-amber-600 mr-3"></i>
+            Tipe Kamar
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <!-- Deluxe Room -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-bed"></i></div>
+                <h3 class="font-bold text-xl mb-2">Deluxe Room</h3>
+                <p class="text-gray-600 text-sm mb-3">Kamar dengan 1 tempat tidur queen dan 2 tempat tidur single [citation:2]</p>
+                <ul class="space-y-2 text-sm text-gray-500 mb-4">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Luas kamar: 25 m²
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> AC, TV kabel, lemari es [citation:3]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Kamar mandi dengan shower [citation:4]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Balkon atau teras [citation:4]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Minibar dan fasilitas membuat teh/kopi [citation:2]
+                    </li>
+                </ul>
+                <div class="border-t pt-4">
+                    <span class="font-bold text-amber-600">Mulai Rp 400.000 - Rp 750.000/malam</span>
+                </div>
+            </div>
+
+            <!-- Informasi Kamar Lainnya -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-building"></i></div>
+                <h3 class="font-bold text-xl mb-2">Informasi Kamar</h3>
+                <ul class="space-y-2 text-sm text-gray-500 mb-4">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Tersedia tempat tidur bayi (cot) [citation:4]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Anak-anak dapat menginap gratis [citation:4]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Kamar non-smoking tersedia [citation:4]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Ekstra bed dapat ditambahkan [citation:2]
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Koran harian tersedia [citation:5]
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tips Menginap -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-lightbulb text-amber-600 mr-3"></i>
+                Tips Menginap di Parai City Garden Hotel
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🚪</span>
+                    <p class="text-gray-700 text-sm">Perhatikan lengkungan pintu masuk saat menuju resepsionis, Anda perlu membungkuk agar tidak terbentur [citation:2].</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🍳</span>
+                    <p class="text-gray-700 text-sm">Sarapan tersedia, pastikan memilih kamar dengan fasilitas sarapan [citation:3].</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🚗</span>
+                    <p class="text-gray-700 text-sm">Manfaatkan layanan sewa sepeda atau mobil untuk menjelajahi kota dengan lebih leluasa [citation:3].</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🧳</span>
+                    <p class="text-gray-700 text-sm">Jika memiliki banyak bagasi, pertimbangkan untuk meminta bantuan staf karena tidak ada lift [citation:2].</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🎤</span>
+                    <p class="text-gray-700 text-sm">Manfaatkan fasilitas karaoke untuk hiburan malam bersama teman atau keluarga [citation:2].</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">📅</span>
+                    <p class="text-gray-700 text-sm">Harga dapat bervariasi tergantung musim, lakukan reservasi lebih awal untuk harga terbaik [citation:2].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Parai City Garden Hotel
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">📍 Jalan Bagindo Azizchan, Lembah Segar, Sawahlunto, Sumatera Barat, Indonesia, 25173 [citation:3]</p>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="semua-penginapan.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Daftar Penginapan
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto</p>
+            <p class="mt-2">Sumber informasi: Agoda, Trip.com, Traveloka, Booking.com [citation:1][citation:2][citation:3]</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

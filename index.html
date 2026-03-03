@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawahlunto - Kota Warisan Dunia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+        }
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<script>
+    // Menyimpan informasi bahwa pengunjung berasal dari index.html
+    sessionStorage.setItem('asalHalaman', 'index.html');
+</script>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Hero Section dengan background foto kota Sawahlunto -->
+    <div id="beranda" class="relative h-screen bg-cover bg-center" style="background-image: url('images/foto4.jpeg');">
+        <!-- Overlay gradien -->
+        <div class="absolute inset-0 hero-overlay"></div>
+        
+        <!-- Navigasi -->
+        <nav class="relative z-20 flex items-center justify-between px-6 md:px-12 py-5 text-white">
+            <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+            <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wide">
+                <li><a href="#beranda" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Beranda</a></li>
+                <li><a href="#atraksi" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Atraksi</a></li>
+                <li><a href="#penginapan" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Penginapan</a></li>
+                <li><a href="#kuliner" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Kuliner</a></li>
+                <li><a href="#acara" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Acara</a></li>
+            </ul>
+            <button class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Konten Hero utama dengan teks di atas gambar kota -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 drop-shadow-2xl leading-tight">Selamat Datang di<br>Kota Warisan Budaya</h1>
+            <p class="text-base md:text-xl max-w-3xl mb-10 drop-shadow-lg leading-relaxed px-4">
+                Temukan Keajaiban Sawahlunto. Dari tambang batu bara bersejarah hingga pemandangan alam yang memukau, rasakan pesona kota pusaka di Sumatra Barat.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
+                <a href="atraksi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-4 rounded-full transition duration-300 shadow-lg hover:shadow-xl text-center">Jelajahi Atraksi</a>
+                <a href="video-tur.html" class="border-2 border-white hover:bg-white hover:text-gray-900 px-10 py-4 rounded-full transition duration-300 flex items-center justify-center gap-2 font-medium">
+                    <i class="fa-solid fa-play"></i> Tonton Tur Video
+                </a>
+            </div>
+        </div>
+        
+        <!-- Elemen dekoratif pojok -->
+        <div class="absolute bottom-8 left-8 text-white/40 text-sm hidden md:block">
+            <i class="fa-regular fa-circle"></i> Warisan Budaya Dunia
+        </div>
+    </div>
+
+    <!-- Section Statistik dengan link ke halaman masing-masing -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- UNESCO Heritage Site -->
+                <a href="unesco.html" class="stat-card text-center p-6 rounded-2xl bg-gray-50 hover:bg-amber-50 transition duration-300 block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">UNESCO Heritage Site</h3>
+                    <p class="text-gray-600">Tambang Ombilin</p>
+                    <span class="text-xs text-amber-600 mt-2 inline-block">Klik untuk detail →</span>
+                </a>
+                
+                <!-- Objek Wisata -->
+                <a href="objek-wisata.html" class="stat-card text-center p-6 rounded-2xl bg-gray-50 hover:bg-amber-50 transition duration-300 block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Objek Wisata</h3>
+                    <p class="text-gray-600">20+ Destinasi</p>
+                    <span class="text-xs text-amber-600 mt-2 inline-block">Klik untuk detail →</span>
+                </a>
+                
+                <!-- Festival Budaya -->
+                <a href="festival.html" class="stat-card text-center p-6 rounded-2xl bg-gray-50 hover:bg-amber-50 transition duration-300 block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Festival Budaya</h3>
+                    <p class="text-gray-600">Setiap Tahun</p>
+                    <span class="text-xs text-amber-600 mt-2 inline-block">Klik untuk detail →</span>
+                </a>
+                
+                <!-- Spot Instagramable -->
+                <a href="spot-foto.html" class="stat-card text-center p-6 rounded-2xl bg-gray-50 hover:bg-amber-50 transition duration-300 block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Spot Instagramable</h3>
+                    <p class="text-gray-600">100+ Lokasi</p>
+                    <span class="text-xs text-amber-600 mt-2 inline-block">Klik untuk detail →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Atraksi -->
+    <section id="atraksi" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Atraksi Populer</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="overflow-hidden">
+                        <img src="images/masjid-agung.webp" alt="Masjid Agung" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Masjid Agung</h3>
+                        <p class="text-gray-600 leading-relaxed">Masjid Agung Sawahlunto adalah salah satu masjid terbesar di Sumatera Barat dengan arsitektur unik yang mencerminkan budaya lokal.</p>
+                        <a href="masjid-agung.html" class="inline-block mt-4 text-amber-600 font-medium hover:text-amber-700">Selengkapnya <i class="fa-solid fa-arrow-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="overflow-hidden">
+                        <img src="images/cemara4.jpeg" alt="Puncak Cemara" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Puncak Cemara</h3>
+                        <p class="text-gray-600 leading-relaxed">Puncak Cemara berada di kawasan Sawahlunto dengan pemandangan alam yang indah dan udara sejuk.</p>
+                        <a href="puncak-cemara.html" class="inline-block mt-4 text-amber-600 font-medium hover:text-amber-700">Selengkapnya <i class="fa-solid fa-arrow-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="overflow-hidden">
+                        <img src="images/museum-tambang-batubara.jpg" alt="Museum Tambang" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Museum Tambang</h3>
+                        <p class="text-gray-600 leading-relaxed">Koleksi alat-alat tambang kuno, dokumen sejarah, dan diorama kehidupan penambang masa lalu.</p>
+                        <a href="museum-tambang.html" class="inline-block mt-4 text-amber-600 font-medium hover:text-amber-700">Selengkapnya <i class="fa-solid fa-arrow-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-10">
+                <a href="semua-atraksi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">Lihat Semua Atraksi</a>
+            </div>            
+
+        </div>
+    </section>
+
+    <!-- Section Penginapan dengan link ke halaman detail -->
+    <section id="penginapan" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">🏨 Hotel & Penginapan di Sawahlunto</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">⭐ Temukan berbagai pilihan akomodasi nyaman, dari hotel heritage hingga homestay ramah kantong untuk liburan Anda.</p>
+            </div>
+            
+            <!-- Hotel Utama -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center"><i class="fa-solid fa-hotel text-amber-600 mr-3"></i> Hotel dengan Fasilitas Lengkap</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="hotel-khas-ombilin.html" class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 p-5 block">
+                        <div class="text-amber-600 text-3xl mb-3"><i class="fa-solid fa-building"></i></div>
+                        <h4 class="font-bold text-lg mb-1">KHAS Ombilin Hotel</h4>
+                        <p class="text-gray-600 text-sm mb-2">⭐ 4.5 · Hotel Heritage</p>
+                        <p class="text-gray-600 text-sm">Hotel heritage populer dengan interior klasik dan lokasi strategis di pusat kota tua Sawahlunto.</p>
+                    </a>
+                    
+                    <a href="parai-city-garden.html" class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 p-5 block">
+                        <div class="text-amber-600 text-3xl mb-3"><i class="fa-solid fa-hotel"></i></div>
+                        <h4 class="font-bold text-lg mb-1">Parai City Garden Hotel</h4>
+                        <p class="text-gray-600 text-sm mb-2">⭐ 4.2 · Rp400rb+</p>
+                        <p class="text-gray-600 text-sm">Hotel dengan nuansa tradisional dan modern, fasilitas kamar lengkap, restoran, area parkir, dan dekat sejumlah atraksi wisata.</p>
+                    </a>
+                    
+                    <a href="hotel-cahaya.html" class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 p-5 block">
+                        <div class="text-amber-600 text-3xl mb-3"><i class="fa-solid fa-bed"></i></div>
+                        <h4 class="font-bold text-lg mb-1">Hotel Cahaya</h4>
+                        <p class="text-gray-600 text-sm mb-2">⭐ 3.8 · Ekonomis</p>
+                        <p class="text-gray-600 text-sm">Hotel standar di kawasan Talawi Hilir dengan harga yang cukup terjangkau.</p>
+                    </a>
+                    
+                    <a href="hotel-laura.html" class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 p-5 block">
+                        <div class="text-amber-600 text-3xl mb-3"><i class="fa-solid fa-hotel"></i></div>
+                        <h4 class="font-bold text-lg mb-1">Hotel Laura</h4>
+                        <p class="text-gray-600 text-sm mb-2">⭐ 3.9 · Sederhana</p>
+                        <p class="text-gray-600 text-sm">Pilihan hotel kecil lainnya di Lembah Segar, sering dipilih pengunjung yang mencari akomodasi sederhana dekat pusat kota.</p>
+                    </a>
+                </div>
+            </div>
+
+            
+            <!-- Catatan Tambahan -->
+            <div class="mt-12 p-5 bg-gray-100 rounded-xl text-center">
+                <p class="text-gray-700"><i class="fa-solid fa-circle-info text-amber-600 mr-2"></i> Semua pilihan penginapan di atas tersedia dengan berbagai rentang harga. Klik pada masing-masing penginapan untuk melihat detail dan melakukan pemesanan.</p>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="semua-penginapan.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">Lihat Semua Penginapan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Kuliner dengan link -->
+    <section id="kuliner" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Kuliner Khas</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Nikmati kelezatan kuliner khas Sawahlunto yang menggugah selera.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="sate-mak-syukur.html" class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition p-6 text-center block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-utensils"></i></div>
+                    <h3 class="font-bold text-xl mb-2">Sate Mak Syukur</h3>
+                    <p class="text-gray-600">Sate daging sapi dengan bumbu khas</p>
+                </a>
+                
+                <a href="rendang-sawahlunto.html" class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition p-6 text-center block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-bowl-food"></i></div>
+                    <h3 class="font-bold text-xl mb-2">Rendang Sawahlunto</h3>
+                    <p class="text-gray-600">Rendang daging dengan resep turun-temurun</p>
+                </a>
+                
+                <a href="kue-sapik.html" class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition p-6 text-center block">
+                    <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-cake"></i></div>
+                    <h3 class="font-bold text-xl mb-2">Kue Sapik</h3>
+                    <p class="text-gray-600">Kue tradisional khas Sawahlunto</p>
+                </a>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="semua-kuliner.html" class="inline-block border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white px-8 py-3 rounded-full font-medium transition duration-300">Lihat Semua Kuliner</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section Acara dengan link -->
+<section id="acara" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Acara & Festival 2026</h2>
+            <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Rayakan HUT ke-138 Kota Sawahlunto dan berbagai festival menarik sepanjang tahun.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- HUT Sawahlunto ke-138 -->
+            <a href="festival.html" class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-lg p-6 block border-t-4 border-amber-500">
+                <div class="text-amber-600 font-bold mb-2">1 Desember 2026</div>
+                <h3 class="font-bold text-xl mb-2">HUT Sawahlunto ke-138</h3>
+                <p class="text-gray-600">Perayaan Hari Ulang Tahun Kota Sawahlunto dengan karnaval, budaya, dan derby</p>
+                <span class="inline-block mt-3 bg-green-100 text-green-800 text-xs px-2 py-1 rounded">GRATIS</span>
+            </a>
+            
+            <!-- Festival Budaya -->
+            <a href="festival.html" class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-lg p-6 block">
+                <div class="text-amber-600 font-bold mb-2">15-17 Agustus 2026</div>
+                <h3 class="font-bold text-xl mb-2">Festival Budaya Sawahlunto</h3>
+                <p class="text-gray-600">Pertunjukan seni dan budaya tradisional dari berbagai sanggar</p>
+                <span class="inline-block mt-3 bg-green-100 text-green-800 text-xs px-2 py-1 rounded">GRATIS</span>
+            </a>
+            
+            <!-- Derby Sawahlunto -->
+            <a href="festival.html" class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover:shadow-lg p-6 block">
+                <div class="text-amber-600 font-bold mb-2">1 Desember 2026</div>
+                <h3 class="font-bold text-xl mb-2">Derby Sawahlunto</h3>
+                <p class="text-gray-600">Event pacuan kuda tahunan dalam rangka HUT Sawahlunto</p>
+                <span class="inline-block mt-3 bg-green-100 text-green-800 text-xs px-2 py-1 rounded">GRATIS</span>
+            </a>
+        </div>
+        
+        <div class="text-center mt-10">
+            <a href="festival.html" class="inline-block border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white px-8 py-3 rounded-full font-medium transition duration-300">Lihat Semua Acara</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Video Tur -->
+    <div id="video-tur" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Tur Video Sawahlunto</h2>
+            <div class="max-w-4xl mx-auto aspect-video bg-black rounded-2xl flex items-center justify-center">
+                <i class="fa-solid fa-play text-6xl text-amber-500"></i>
+                <p class="ml-4 text-xl">Video tur akan segera tersedia</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm">
+                <div class="flex items-center space-x-4 text-gray-300">
+                    <span><i class="fa-regular fa-copyright"></i> 2026 Pemerintah Kota Sawahlunto</span>
+                    <span class="text-gray-600">|</span>
+                    <span>Seluruh hak cipta dilindungi</span>
+                </div>
+                
+                <!-- Pesan aktivasi Windows -->
+                <div class="flex items-center space-x-3 mt-4 md:mt-0 bg-gray-800 px-5 py-2 rounded-full">
+                    <i class="fa-solid fa-circle-exclamation text-amber-400"></i>
+                    <span class="font-medium">Activate Windows</span>
+                    <span class="text-gray-400 text-xs hidden sm:inline">Go to Settings to activate Windows</span>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 my-6"></div>
+            
+            <div class="flex flex-wrap justify-between text-gray-400 text-xs">
+                <div class="flex space-x-4">
+                    <span><i class="fa-regular fa-envelope mr-1"></i> info@sawahlunto.go.id</span>
+                    <span><i class="fa-solid fa-phone mr-1"></i> (0754) 123456</span>
+                </div>
+                <div class="flex space-x-3 mt-2 sm:mt-0">
+                    <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Script untuk tombol scroll ke atas
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll untuk semua anchor link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

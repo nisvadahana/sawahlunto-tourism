@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambang Batubara Ombilin - Warisan Dunia UNESCO Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #f59e0b;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% - 15px);
+            background: #e5e7eb;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="atraksi.html" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="atraksi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Atraksi
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/tambang-ombilin.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/80"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-helmet-safety"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Tambang Batubara Ombilin</h1>
+            <p class="text-xl max-w-3xl mb-6">Warisan Dunia UNESCO - Ombilin Coal Mining Heritage of Sawahlunto</p>
+            <div class="flex gap-4">
+                <span class="bg-amber-500 text-gray-900 px-6 py-2 rounded-full font-bold flex items-center gap-2">
+                    <i class="fa-brands fa-unesco"></i> UNESCO World Heritage
+                </span>
+                <span class="bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full">Sejak 2019</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Informasi Umum -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-helmet-safety text-amber-600 mr-3"></i>
+                        Tambang Batubara Ombilin / Lubang Mbah Soero
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Situs tambang batubara tua yang jadi ikon utama Sawahlunto. Kamu bisa menelusuri terowongan, melihat relics tambang, rel kereta tua, dan bangunan kolonial yang dipelihara sebagai museum sejarah pertambangan.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Tambang Batubara Ombilin adalah situs pertambangan batu bara bersejarah yang terletak di Sawahlunto, Sumatera Barat. Tambang ini merupakan salah satu tambang batu bara tertua di Indonesia dan memiliki nilai sejarah internasional.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-4">
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-regular fa-building"></i> Beroperasi sejak 1892
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-globe"></i> Status: UNESCO (2019)
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-star"></i> Rating: 4.9/5
+                        </span>
+                    </div>
+                </div>
+                <div class="md:w-1/3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-circle-info"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Kunjungan</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="flex justify-between">
+                            <span>Jam Operasional</span>
+                            <span class="font-bold">08.00 - 17.00 WIB</span>
+                        </p>
+                        <p class="flex justify-between">
+                            <span>Harga Tiket</span>
+                            <span class="font-bold">Rp 10.000 - Rp 25.000</span>
+                        </p>
+                        <p class="flex justify-between">
+                            <span>Lokasi</span>
+                            <span class="font-bold">Pusat Kota Sawahlunto</span>
+                        </p>
+                        <p class="flex justify-between">
+                            <span>Kontak</span>
+                            <span class="font-bold">(0754) 123456</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid Info: Sejarah & Status Dunia -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Sejarah Singkat -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    📜 Sejarah Singkat
+                </h2>
+                
+                <div class="timeline-item">
+                    <p class="text-gray-700"><span class="font-bold text-amber-600">1868</span> - Ditemukan oleh insinyur Belanda, Willem Hendrik de Greve.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <p class="text-gray-700"><span class="font-bold text-amber-600">1892</span> - Mulai dieksploitasi secara besar-besaran oleh pemerintah kolonial Belanda.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <p class="text-gray-700"><span class="font-bold text-amber-600">1894</span> - Jalur kereta api Sawahlunto - Teluk Bayur mulai beroperasi.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <p class="text-gray-700"><span class="font-bold text-amber-600">Masa Kolonial</span> - Batu bara dari Ombilin diangkut menggunakan jalur kereta api menuju pelabuhan di Padang.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <p class="text-gray-700"><span class="font-bold text-amber-600">Orang Rantai</span> - Banyak pekerja paksa (dikenal sebagai orang rantai) yang dipekerjakan di sini pada masa kolonial.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <p class="text-gray-700"><span class="font-bold text-amber-600">2019</span> - Ditetapkan sebagai Warisan Dunia UNESCO pada 6 Juli 2019.</p>
+                </div>
+                
+                <div class="mt-6 bg-amber-50 p-4 rounded-xl">
+                    <p class="text-sm text-gray-600 italic">
+                        "Tambang ini menjadi saksi bisu sejarah kelam kolonialisme sekaligus kemajuan teknologi pertambangan pada masanya."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Status Warisan Dunia -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-globe text-amber-600 mr-3"></i>
+                    🌍 Status Warisan Dunia UNESCO
+                </h2>
+                
+                <div class="mb-6">
+                    <div class="bg-amber-600 text-white px-4 py-2 rounded-t-lg font-bold">Ditetapkan pada 6 Juli 2019</div>
+                    <div class="border border-gray-200 p-4 rounded-b-lg">
+                        <p class="text-gray-700 mb-3">
+                            <span class="font-bold">Nama Resmi:</span> Ombilin Coal Mining Heritage of Sawahlunto
+                        </p>
+                        <p class="text-gray-700 mb-3">
+                            <span class="font-bold">Kriteria UNESCO:</span> (ii) dan (iv)
+                        </p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            <span class="font-bold">Kriteria (ii):</span> Menampilkan pertukaran nilai-nilai kemanusiaan dalam perkembangan teknologi pertambangan.
+                        </p>
+                        <p class="text-gray-600 text-sm">
+                            <span class="font-bold">Kriteria (iv):</span> Contoh arsitektur teknologi pertambangan yang menggambarkan periode penting dalam sejarah manusia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-5 rounded-xl">
+                    <h3 class="font-bold text-gray-800 mb-3">Nilai Universal Luar Biasa:</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Penetapan ini karena nilai sejarahnya sebagai <span class="font-bold text-amber-600">sistem pertambangan terpadu pertama di Asia Tenggara</span> yang mencakup tambang, jalur kereta api, pelabuhan, dan kota tambang. Sawahlunto berkembang menjadi kota perusahaan (company town) yang terencana dengan infrastruktur lengkap untuk pekerja tambang.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Komponen Warisan -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-cubes text-amber-600 mr-3"></i>
+                Komponen Warisan Tambang Ombilin
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-train"></i></div>
+                    <h3 class="font-bold">Jalur Kereta Api</h3>
+                    <p class="text-gray-600 text-xs">Rel kereta batu bara Sawahlunto - Padang (1894)</p>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-ship"></i></div>
+                    <h3 class="font-bold">Pelabuhan Teluk Bayur</h3>
+                    <p class="text-gray-600 text-xs">Pelabuhan ekspor batu bara di Padang</p>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-building"></i></div>
+                    <h3 class="font-bold">Kota Tambang</h3>
+                    <p class="text-gray-600 text-xs">Sawahlunto sebagai company town</p>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-industry"></i></div>
+                    <h3 class="font-bold">Fasilitas Tambang</h3>
+                    <p class="text-gray-600 text-xs">Lubang tambang, silo, gudang batu bara</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Area yang Bisa Dikunjungi -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-map-location-dot text-amber-600 mr-3"></i>
+            Area yang Bisa Dikunjungi
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <!-- Lubang Mbah Soero -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4 text-center"><i class="fa-solid fa-dungeon"></i></div>
+                <h3 class="font-bold text-xl mb-2 text-center">Lubang Mbah Soero</h3>
+                <p class="text-gray-600 text-sm text-center">Terowongan tambang tertua yang masih bisa dimasuki pengunjung untuk melihat langsung aktivitas penambangan masa lalu.</p>
+            </div>
+
+            <!-- Museum Tambang -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4 text-center"><i class="fa-solid fa-landmark"></i></div>
+                <h3 class="font-bold text-xl mb-2 text-center">Museum Tambang</h3>
+                <p class="text-gray-600 text-sm text-center">Menyimpan koleksi alat-alat tambang kuno, dokumen sejarah, dan diorama kehidupan penambang.</p>
+            </div>
+
+            <!-- Bangunan Kolonial -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4 text-center"><i class="fa-solid fa-building-columns"></i></div>
+                <h3 class="font-bold text-xl mb-2 text-center">Bangunan Kolonial</h3>
+                <p class="text-gray-600 text-sm text-center">Deretan bangunan Belanda yang masih terawat seperti kantor tambang, rumah pejabat, dan gedung pertemuan.</p>
+            </div>
+        </div>
+
+        <!-- Informasi Kunjungan Lengkap -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-200 mr-3"></i>
+                Informasi Kunjungan Lengkap
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-regular fa-clock"></i></div>
+                    <h3 class="font-bold text-sm">Jam Operasional</h3>
+                    <p class="text-amber-100 text-sm">Senin - Minggu<br>08.00 - 17.00 WIB</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-ticket"></i></div>
+                    <h3 class="font-bold text-sm">Harga Tiket</h3>
+                    <p class="text-amber-100 text-sm">Dewasa: Rp 15.000<br>Anak-anak: Rp 10.000</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-phone"></i></div>
+                    <h3 class="font-bold text-sm">Kontak</h3>
+                    <p class="text-amber-100 text-sm">(0754) 123456<br>info@ombilinheritage.id</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3 class="font-bold text-sm">Lokasi</h3>
+                    <p class="text-amber-100 text-sm">Pusat Kota Sawahlunto<br>Sumatera Barat</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white/10 backdrop-blur-sm p-3 rounded-lg text-sm">
+                    <i class="fa-solid fa-check-circle text-amber-300 mr-2"></i> Pemandu wisata tersedia
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-3 rounded-lg text-sm">
+                    <i class="fa-solid fa-check-circle text-amber-300 mr-2"></i> Area parkir luas
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-3 rounded-lg text-sm">
+                    <i class="fa-solid fa-check-circle text-amber-300 mr-2"></i> Mushola & toilet
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Berkunjung -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-lightbulb text-amber-600 mr-3"></i>
+                Tips Berkunjung ke Tambang Ombilin
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">👟</span>
+                    <p class="text-gray-700 text-sm">Gunakan sepatu nyaman dan tidak licin karena area tambang bisa basah dan licin.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🧥</span>
+                    <p class="text-gray-700 text-sm">Bawa jaket tipis karena suhu di dalam tambang cukup dingin.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">📷</span>
+                    <p class="text-gray-700 text-sm">Siapkan kamera untuk mengabadikan momen di spot-spot menarik.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">⏰</span>
+                    <p class="text-gray-700 text-sm">Datang pagi hari untuk menghindari keramaian dan mendapatkan pengalaman lebih maksimal.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🎧</span>
+                    <p class="text-gray-700 text-sm">Ikuti arahan pemandu dan jangan menyentuh benda-benda bersejarah.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">💡</span>
+                    <p class="text-gray-700 text-sm">Bawa senter kecil jika ingin menjelajahi sudut-sudut tambang.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fasilitas Pendukung -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-2"></i>
+                Fasilitas Pendukung
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-car text-amber-600 block text-xl mb-1"></i>
+                    Parkir Luas
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-mosque text-amber-600 block text-xl mb-1"></i>
+                    Mushola
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-toilet text-amber-600 block text-xl mb-1"></i>
+                    Toilet Umum
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-store text-amber-600 block text-xl mb-1"></i>
+                    Toko Souvenir
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-utensils text-amber-600 block text-xl mb-1"></i>
+                    Kantin
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-person-walking-with-cane text-amber-600 block text-xl mb-1"></i>
+                    Pemandu Wisata
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-wifi text-amber-600 block text-xl mb-1"></i>
+                    WiFi Area
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center text-sm">
+                    <i class="fa-solid fa-camera text-amber-600 block text-xl mb-1"></i>
+                    Spot Foto
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Tambang Batubara Ombilin
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">📍 Jalan Ahmad Yani, Pasar Remaja, Kec. Lembah Segar, Kota Sawahlunto, Sumatera Barat 27422</p>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="atraksi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Atraksi
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto</p>
+            <p class="mt-2">Sumber informasi: Kementerian Pendidikan dan Kebudayaan, UNESCO World Heritage Centre</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

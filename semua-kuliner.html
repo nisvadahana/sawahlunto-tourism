@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Kuliner Khas Sawahlunto - Pesona Rasa Minang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .kuliner-card {
+            transition: all 0.3s ease;
+        }
+        .kuliner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="index.html#kuliner" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-utensils"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-lg">Kuliner Khas Sawahlunto</h1>
+            <p class="text-xl max-w-3xl mx-auto">Jelajahi Kelezatan Kuliner Minang di Kota Warisan</p>
+            <div class="w-24 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Statistik Kuliner -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-utensils"></i></div>
+                <div class="text-3xl font-bold text-gray-800">15+</div>
+                <div class="text-gray-600">Kuliner Khas</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-store"></i></div>
+                <div class="text-3xl font-bold text-gray-800">25+</div>
+                <div class="text-gray-600">Tempat Makan</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-cake"></i></div>
+                <div class="text-3xl font-bold text-gray-800">8+</div>
+                <div class="text-gray-600">Kue Tradisional</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-star"></i></div>
+                <div class="text-3xl font-bold text-gray-800">4.8</div>
+                <div class="text-gray-600">Rating Rata-rata</div>
+            </div>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Sawahlunto tidak hanya kaya akan warisan tambang dan keindahan alam, tetapi juga memiliki kekayaan kuliner yang menggugah selera. 
+                Perpaduan budaya Minangkabau dengan sejarah pertambangan menciptakan cita rasa unik yang tidak bisa ditemukan di tempat lain. 
+                Dari hidangan berat hingga kue tradisional, semua menawarkan pengalaman kuliner yang tak terlupakan.
+            </p>
+        </div>
+
+        <!-- Kategori: Hidangan Utama -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-bowl-food text-amber-600 mr-3"></i>
+            Hidangan Utama
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Rendang Sawahlunto -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-bowl-food"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.9</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Rendang Sawahlunto</h3>
+                <p class="text-gray-600 text-sm mb-3">Rendang daging sapi dengan resep turun-temurun khas Minangkabau, dimasak berjam-jam hingga kering dan bumbu meresap.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>RM Minang Sederhana</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 35.000</span>
+                    <a href="rendang-sawahlunto.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Sate Mak Syukur -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-utensils"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.8</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Sate Mak Syukur</h3>
+                <p class="text-gray-600 text-sm mb-3">Sate daging sapi dengan bumbu kacang khas Sawahlunto yang legendaris, daging empuk dan bumbu meresap.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Pasar Raya Sawahlunto</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 25.000</span>
+                    <a href="sate-mak-syukur.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Dendeng Batokok -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-drumstick-bite"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.7</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Dendeng Batokok</h3>
+                <p class="text-gray-600 text-sm mb-3">Daging sapi iris tipis yang dipukul-pukul (ditokok) lalu digoreng dan disiram dengan sambal lado hijau khas Minang.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>RM Simpang Raya</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 40.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Gulai Kepala Ikan -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-fish"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.8</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Gulai Kepala Ikan</h3>
+                <p class="text-gray-600 text-sm mb-3">Kepala ikan kakap merah dimasak dengan kuah gulai kaya rempah khas Minang, pedas dan gurih.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>RM Danau Biru</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 75.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Ikan Bakar -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-fire"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.6</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Ikan Bakar</h3>
+                <p class="text-gray-600 text-sm mb-3">Ikan air tawar atau laut segar yang dibakar dengan bumbu rempah, disajikan dengan sambal dan lalapan.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>RM Danau Kandi</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 45.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Ayam Pop -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-drumstick-bite"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.5</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Ayam Pop</h3>
+                <p class="text-gray-600 text-sm mb-3">Ayam kampung rebus dengan bumbu putih khas Minang, disajikan dengan sambal dan sayur singkong.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>RM Pondok Minang</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 35.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori: Kue & Camilan Tradisional -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-cake text-amber-600 mr-3"></i>
+            Kue & Camilan Tradisional
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Kue Sapik -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-cookie"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.7</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Kue Sapik</h3>
+                <p class="text-gray-600 text-sm mb-3">Kue tradisional pipih tipis dari tepung beras dan gula merah, renyah dan manis gurih.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Pasar Oleh-Oleh</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 25.000</span>
+                    <a href="kue-sapik.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Karupuak Sanjai -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-wheat-awn"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.8</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Karupuak Sanjai</h3>
+                <p class="text-gray-600 text-sm mb-3">Keripik singkong khas Minang dengan rasa gurih dan pedas, renyah dan cocok sebagai oleh-oleh.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Sanjai Cap Rumah</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 20.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Kue Lapek -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-cube"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.5</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Kue Lapek</h3>
+                <p class="text-gray-600 text-sm mb-3">Kue tradisional berbentuk segitiga dari tepung beras dan santan, dibungkus daun pisang.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Pasar Atas</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 15.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Wajik -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-cube"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.4</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Wajik</h3>
+                <p class="text-gray-600 text-sm mb-3">Kue ketan dengan gula merah, manis legit dan bertekstur kenyal.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Pusat Oleh-Oleh</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 18.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Galamai -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-candy"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.6</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Galamai</h3>
+                <p class="text-gray-600 text-sm mb-3">Dodol khas Minang dengan tekstur kenyal dan rasa manis legit, terbuat dari tepung ketan dan gula.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Kubang Galamai</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 30.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Kipang Kacang -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-seedling"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.5</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Kipang Kacang</h3>
+                <p class="text-gray-600 text-sm mb-3">Kacang tanah yang dilapisi gula karamel, renyah dan manis.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Pasar Raya</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 15.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori: Minuman Khas -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-mug-hot text-amber-600 mr-3"></i>
+            Minuman Khas
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Kopi Ombilin -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-3"><i class="fa-solid fa-mug-hot"></i></div>
+                <h3 class="font-bold text-xl mb-2">Kopi Ombilin</h3>
+                <p class="text-gray-600 text-sm mb-3">Kopi khas Sawahlunto dengan cita rasa kuat dan aroma khas, diseduh dengan cara tradisional.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Kedai Kopi Ombilin</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 12.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Teh Talua -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-3"><i class="fa-solid fa-mug-saucer"></i></div>
+                <h3 class="font-bold text-xl mb-2">Teh Talua</h3>
+                <p class="text-gray-600 text-sm mb-3">Minuman khas Minang, teh dicampur kuning telur dan gula, dikocok hingga berbusa.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Kedai Pasar Atas</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 10.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Es Kelapa Muda -->
+            <div class="kuliner-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-3"><i class="fa-solid fa-coconut"></i></div>
+                <h3 class="font-bold text-xl mb-2">Es Kelapa Muda</h3>
+                <p class="text-gray-600 text-sm mb-3">Kelapa muda segar dengan es batu dan sirup, pelepas dahaga setelah berkeliling kota.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Taman Segitiga</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 8.000</span>
+                    <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tempat Kuliner Rekomendasi -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-store text-amber-200 mr-3"></i>
+                Tempat Kuliner Rekomendasi
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Pasar Raya Sawahlunto</h3>
+                    <p class="text-amber-100 text-sm mb-1">📍 Pusat Kota</p>
+                    <p class="text-gray-200 text-xs">Sate Mak Syukur, Karupuak Sanjai, Kue Sapik</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">RM Minang Sederhana</h3>
+                    <p class="text-amber-100 text-sm mb-1">📍 Jl. Ahmad Yani</p>
+                    <p class="text-gray-200 text-xs">Rendang, Dendeng Batokok, Gulai</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Kedai Kopi Ombilin</h3>
+                    <p class="text-amber-100 text-sm mb-1">📍 Kota Tua</p>
+                    <p class="text-gray-200 text-xs">Kopi Ombilin, Teh Talua, Kue Tradisional</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Kuliner -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Peta Kuliner Sawahlunto
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif tempat kuliner akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="index.html#kuliner" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Kuliner Khas Sawahlunto</p>
+            <p class="mt-2">Jelajahi kelezatan kuliner Minang di Kota Warisan</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

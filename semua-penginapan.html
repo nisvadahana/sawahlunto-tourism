@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Penginapan di Sawahlunto - Hotel & Homestay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hotel-card {
+            transition: all 0.3s ease;
+        }
+        .hotel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="index.html#penginapan" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-hotel"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-lg">Penginapan di Sawahlunto</h1>
+            <p class="text-xl max-w-3xl mx-auto">Pilihan Hotel & Homestay yang Masih Beroperasi di Kota Warisan</p>
+            <div class="w-24 h-1 bg-white mx-auto mt-6"></div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Statistik Penginapan -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-hotel"></i></div>
+                <div class="text-3xl font-bold text-gray-800">4+</div>
+                <div class="text-gray-600">Hotel</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-house-chimney"></i></div>
+                <div class="text-3xl font-bold text-gray-800">6+</div>
+                <div class="text-gray-600">Homestay</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-star"></i></div>
+                <div class="text-3xl font-bold text-gray-800">4.5+</div>
+                <div class="text-gray-600">Rating Rata-rata</div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <div class="text-4xl text-amber-600 mb-3"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="text-3xl font-bold text-gray-800">2026</div>
+                <div class="text-gray-600">Aktif</div>
+            </div>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Sawahlunto menawarkan berbagai pilihan akomodasi yang nyaman bagi para wisatawan, mulai dari hotel heritage bersejarah hingga homestay keluarga yang hangat. Berikut adalah daftar penginapan yang masih beroperasi dan aktif melayani tamu hingga tahun 2026 berdasarkan data terkini dari berbagai platform pemesanan.
+            </p>
+        </div>
+
+        <!-- Kategori: Hotel -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-hotel text-amber-600 mr-3"></i>
+            Hotel di Sawahlunto
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- KHAS Ombilin Hotel -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6 border-t-4 border-amber-500">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-building"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.5</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">KHAS Ombilin Hotel</h3>
+                <p class="text-gray-600 text-sm mb-3">Hotel heritage dengan bangunan Belanda kuno bersejarah, berada di pusat kota Sawahlunto. Dibuka tahun 2020 dan merupakan bagian dari situs warisan UNESCO. [citation:1][citation:7]</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Jl. A. Yani, Pasar, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-regular fa-clock text-amber-600"></i>
+                    <span>Check-in: 14.00 | Check-out: 12.00</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>Free WiFi, Parkir, Restoran, Airport Shuttle</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 450.000 - Rp 800.000</span>
+                    <a href="hotel-khas-ombilin.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Parai City Garden Hotel -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-hotel"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.2</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Parai City Garden Hotel</h3>
+                <p class="text-gray-600 text-sm mb-3">Hotel dengan nuansa tradisional dan modern, fasilitas lengkap termasuk KTV, spa, restoran, dan area parkir luas. Beroperasi sejak 2011 dan masih aktif. [citation:2][citation:8]</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Jl. Bagindo Aziz Chan, Aur Mulio, Lembah Segar</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-regular fa-clock text-amber-600"></i>
+                    <span>Check-in: 11.00 | Check-out: 12.00</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>Free WiFi, Parkir, KTV, Spa, Restoran</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 400.000 - Rp 750.000</span>
+                    <a href="parai-city-garden.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Hotel Cahaya -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-bed"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 3.8</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Hotel Cahaya</h3>
+                <p class="text-gray-600 text-sm mb-3">Hotel standar di kawasan Talawi Hilir dengan harga terjangkau. Cocok untuk wisatawan yang mencari akomodasi sederhana dan bersih.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Talawi Hilir, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>WiFi, Parkir, Kamar AC</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 250.000 - Rp 350.000</span>
+                    <a href="hotel-cahaya.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Hotel Laura -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-hotel"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 3.9</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Hotel Laura</h3>
+                <p class="text-gray-600 text-sm mb-3">Hotel kecil di Lembah Segar, dekat pusat kota. Pilihan akomodasi sederhana dengan harga bersahabat.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Lembah Segar, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>WiFi, Parkir, Kamar AC</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 200.000 - Rp 300.000</span>
+                    <a href="hotel-laura.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori: Homestay & Guest House -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+            <i class="fa-solid fa-house-chimney text-amber-600 mr-3"></i>
+            Homestay & Guest House (Aktif 2026)
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Harisha Homestay Sawah Lunto Syariah Redpartner -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-house"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.0</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Harisha Homestay Syariah</h3>
+                <p class="text-gray-600 text-sm mb-3">Homestay bergaya syariah dengan WiFi gratis, AC, kamar privat. Cocok untuk pasangan, keluarga kecil, atau solo traveler. [citation:3]</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Jl. Saringan No. 26, Barangin, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-regular fa-clock text-amber-600"></i>
+                    <span>Check-in: 14.00-22.00 | Check-out: 08.00-12.00</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>Free WiFi, Parkir, Kamar AC</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 200.000 - Rp 300.000</span>
+                    <a href="harisha-homestay.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- OMA Homestay -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6 border-t-4 border-amber-500">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-house-chimney"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.5</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">OMA Homestay</h3>
+                <p class="text-gray-600 text-sm mb-3">Homestay populer dengan rating tinggi (8.9/10 dari Traveloka). Staf ramah, tempat bersih, AC dingin, dan sarapan lezat. Lokasi strategis dekat Museum Goedang Ransoem. [citation:4][citation:10]</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Jl. Tangsi Gunung, Lembah Segar, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-regular fa-clock text-amber-600"></i>
+                    <span>Check-in: 14.00-23.00 | Check-out: 12.00-13.00</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>Free WiFi, AC, Sarapan, Parkir</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 250.000 - Rp 400.000</span>
+                    <a href="homestay-oma.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Cendana Homestay -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-house"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.6</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Cendana Homestay</h3>
+                <p class="text-gray-600 text-sm mb-3">Homestay keluarga dengan lokasi sangat strategis (9.6/10), dekat Museum Goedang Ransoem, Info Box, dan Lubang Mbah Soero. Suasana seperti rumah sendiri. [citation:5]</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Jl. Tangsi Baru, Tanah Lapang, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-regular fa-clock text-amber-600"></i>
+                    <span>Check-in: 13.00-22.00 | Check-out: 12.00-13.00</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>Free WiFi, AC, Sarapan, Parkir, Airport Shuttle</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 300.000 - Rp 500.000</span>
+                    <a href="cendana-homestay.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Balqis Homestay -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-house"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.2</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Balqis Homestay</h3>
+                <p class="text-gray-600 text-sm mb-3">Guest house dengan pemandangan gunung, menyediakan sarapan Asia dan Halal. Fasilitas termasuk lapangan tenis, teras, dan free shuttle service. [citation:6]</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Jl. Diponegoro, Air Dingin, Lembah Segar</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>Free WiFi, Sarapan, Lapangan Tenis, Shuttle</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 250.000 - Rp 350.000</span>
+                    <a href="homestay-balqis.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Meuthia Homestay -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-house"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.0</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Meuthia Homestay</h3>
+                <p class="text-gray-600 text-sm mb-3">Homestay di area Perumnas Santur, pilihan murah dan nyaman dengan beberapa tipe kamar. Cocok untuk wisatawan budget.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Perumnas Santur, Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>WiFi, Kamar AC, Parkir</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 150.000 - Rp 250.000</span>
+                    <a href="meuthia-homestay.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+
+            <!-- Homestay AILA -->
+            <div class="hotel-card bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="text-5xl text-amber-600"><i class="fa-solid fa-house"></i></div>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">⭐ 4.3</span>
+                </div>
+                <h3 class="font-bold text-xl mb-2">Homestay AILA</h3>
+                <p class="text-gray-600 text-sm mb-3">Opsi homestay dengan rating tinggi, ideal untuk yang ingin suasana personal dan nyaman.</p>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                    <i class="fa-solid fa-location-dot text-amber-600"></i>
+                    <span>Sawahlunto</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <i class="fa-solid fa-wifi text-amber-600"></i>
+                    <span>WiFi, Kamar AC, Parkir</span>
+                </div>
+                <div class="flex justify-between items-center mt-4">
+                    <span class="font-bold text-amber-600">Rp 200.000 - Rp 300.000</span>
+                    <a href="homestay-aila.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium transition">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rekomendasi Berdasarkan Hasil Pencarian -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-star text-amber-200 mr-3"></i>
+                Rekomendasi Penginapan Terdekat dengan Wisata
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Dekat Danau Biru</h3>
+                    <ul class="text-amber-100 text-sm space-y-1">
+                        <li>• KHAS Ombilin Hotel (9.97 km)</li>
+                        <li>• Oma Homestay (9.31 km)</li>
+                        <li>• Parai City Garden (10.27 km)</li>
+                    </ul>
+                    <p class="text-gray-200 text-xs mt-2">[citation:9]</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Dekat Museum & Heritage</h3>
+                    <ul class="text-amber-100 text-sm space-y-1">
+                        <li>• Cendana Homestay (samping Museum Gudang Ransum)</li>
+                        <li>• Oma Homestay (300m ke Museum Goedang Ransoem)</li>
+                        <li>• KHAS Ombilin (pusat kota tua)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <h3 class="font-bold text-lg mb-2">Budget Ramah</h3>
+                    <ul class="text-amber-100 text-sm space-y-1">
+                        <li>• Meuthia Homestay (Rp150rb+)</li>
+                        <li>• Harisha Homestay (Rp200rb+)</li>
+                        <li>• Hotel Laura (Rp200rb+)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informasi Pemesanan -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-600 mr-3"></i>
+                Tips Memilih Penginapan di Sawahlunto
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center"><i class="fa-solid fa-calendar-check text-amber-600 mr-2"></i> Musim Liburan</h3>
+                    <p class="text-gray-600 text-sm">Sebaiknya lakukan reservasi minimal 1-2 minggu sebelumnya, terutama saat akhir pekan dan musim liburan.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center"><i class="fa-solid fa-location-dot text-amber-600 mr-2"></i> Lokasi Strategis</h3>
+                    <p class="text-gray-600 text-sm">Pilih penginapan di sekitar Lembah Segar atau pusat kota untuk akses mudah ke objek wisata heritage.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center"><i class="fa-solid fa-phone text-amber-600 mr-2"></i> Kontak Darurat</h3>
+                    <p class="text-gray-600 text-sm">Dinas Pariwisata Sawahlunto<br>(0754) 123456</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 flex items-center"><i class="fa-solid fa-clock text-amber-600 mr-2"></i> Check-in/out</h3>
+                    <p class="text-gray-600 text-sm">Umumnya check-in pukul 14.00 dan check-out pukul 12.00. Konfirmasi langsung ke penginapan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Peta Sebaran Penginapan
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif lokasi penginapan akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="index.html#penginapan" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Direktori Penginapan</p>
+            <p class="mt-2">Data diperbarui Maret 2026 berdasarkan informasi dari platform pemesanan [citation:1][citation:4][citation:7]</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

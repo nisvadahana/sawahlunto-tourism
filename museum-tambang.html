@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Tambang Sawahlunto - Jejak Sejarah Pertambangan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .museum-card {
+            transition: all 0.3s ease;
+        }
+        .museum-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#atraksi" class="hover:text-amber-300 transition">Atraksi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="objek-wisata.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/museum-tambang-batubara.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/80"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-solid fa-landmark"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Museum Tambang Sawahlunto</h1>
+            <p class="text-xl max-w-3xl">Menyimpan Jejak Sejarah Pertambangan Batubara di Sumatra Barat</p>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Pengantar -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-landmark text-amber-600 mr-3"></i>
+                        Museum Tambang Sawahlunto
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Museum Tambang Sawahlunto adalah museum yang menyimpan koleksi alat-alat tambang kuno, dokumen sejarah, dan diorama kehidupan penambang masa lalu. Museum ini terletak di kawasan Kota Tua Sawahlunto dan menjadi salah satu destinasi wisata sejarah utama di kota ini.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Bertempat di bangunan bersejarah peninggalan kolonial Belanda, museum ini menawarkan pengalaman edukatif tentang sejarah pertambangan batubara di Sawahlunto yang telah berlangsung lebih dari seabad.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-amber-50 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-clock"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Cepat</h3>
+                    <div class="space-y-2 text-sm">
+                        <p><span class="font-bold">📍 Lokasi:</span> Jalan Ahmad Yani, Sawahlunto</p>
+                        <p><span class="font-bold">⏰ Jam Operasional:</span> 08.00 - 17.00 WIB</p>
+                        <p><span class="font-bold">🎫 HTM:</span> Rp 10.000 - Rp 15.000</p>
+                        <p><span class="font-bold">🏛️ Status:</span> Cagar Budaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sejarah Museum -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    Sejarah Museum
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Museum Tambang Sawahlunto menempati bangunan bersejarah yang dulunya merupakan kantor administrasi tambang batubara Ombilin pada masa kolonial Belanda. Bangunan ini dibangun pada awal abad ke-20 dan masih mempertahankan arsitektur aslinya.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Diresmikan sebagai museum pada tahun 2005, tempat ini menjadi pusat informasi dan edukasi tentang sejarah pertambangan batubara di Sawahlunto yang telah berlangsung sejak tahun 1892.
+                </p>
+                <div class="bg-amber-50 p-4 rounded-xl mt-4">
+                    <p class="text-sm text-gray-600 italic">
+                        "Museum ini menjadi saksi bisu perkembangan industri pertambangan di Indonesia dari masa ke masa."
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-cube text-amber-600 mr-3"></i>
+                    Koleksi Museum
+                </h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Alat Tambang Kuno:</span> Berbagai peralatan pertambangan dari masa kolonial hingga kemerdekaan.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Dokumen Sejarah:</span> Arsip, foto, dan dokumen penting tentang operasi tambang.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Diorama:</span> Replika kehidupan penambang dan suasana tambang masa lalu.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Lokomotif Uap:</span> Mesin kereta api tua pengangkut batubara.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Seragam Pekerja:</span> Koleksi pakaian dan perlengkapan pekerja tambang.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Koleksi Unggulan -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-star text-amber-600 mr-3"></i>
+            Koleksi Unggulan
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="museum-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/Lokomotif-Uap.jpeg" alt="Lokomotif Uap" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2">Lokomotif Uap Mak Itam</h3>
+                    <p class="text-gray-600 text-sm">Lokomotif uap bersejarah yang digunakan untuk mengangkut batubara dari Sawahlunto ke Pelabuhan Teluk Bayur.</p>
+                </div>
+            </div>
+            
+            <div class="museum-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/alat.jpeg" alt="Alat Tambang Kuno" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2">Alat Tambang Kuno</h3>
+                    <p class="text-gray-600 text-sm">Koleksi berbagai peralatan pertambangan dari abad ke-19 hingga awal abad ke-20.</p>
+                </div>
+            </div>
+            
+            <div class="museum-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/tambang.jpeg" alt="Diorama Tambang" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2">Diorama Kehidupan Tambang</h3>
+                    <p class="text-gray-600 text-sm">Replika suasana tambang bawah tanah dan kehidupan para penambang masa kolonial.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informasi Kunjungan -->
+        <div class="bg-gradient-to-r from-amber-700 to-amber-900 text-white rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-amber-200 mr-3"></i>
+                Informasi Kunjungan
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-regular fa-clock"></i></div>
+                    <h3 class="font-bold text-sm">Jam Operasional</h3>
+                    <p class="text-amber-100 text-sm">08.00 - 17.00 WIB<br>Senin - Minggu</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-ticket"></i></div>
+                    <h3 class="font-bold text-sm">Harga Tiket</h3>
+                    <p class="text-amber-100 text-sm">Dewasa: Rp 15.000<br>Anak-anak: Rp 10.000</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-phone"></i></div>
+                    <h3 class="font-bold text-sm">Kontak</h3>
+                    <p class="text-amber-100 text-sm">(0754) 123456<br>museum@sawahlunto.go.id</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <div class="text-amber-300 text-2xl mb-2"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3 class="font-bold text-sm">Lokasi</h3>
+                    <p class="text-amber-100 text-sm">Jalan Ahmad Yani No. 1<br>Sawahlunto</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-3"></i>
+                Fasilitas di Museum
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-car"></i></div>
+                    <span class="text-sm font-medium">Area Parkir</span>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-toilet"></i></div>
+                    <span class="text-sm font-medium">Toilet</span>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-mosque"></i></div>
+                    <span class="text-sm font-medium">Mushola</span>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-store"></i></div>
+                    <span class="text-sm font-medium">Souvenir Shop</span>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-utensils"></i></div>
+                    <span class="text-sm font-medium">Kantin</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spot Terdekat -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-location-dot text-amber-600 mr-3"></i>
+                Wisata Terdekat
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="tambang-ombilin.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <div>
+                        <h3 class="font-bold">Tambang Ombilin</h3>
+                        <p class="text-xs text-gray-600">500 meter dari museum</p>
+                    </div>
+                </a>
+                
+                <a href="museum-goedang-ransoem.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-utensils"></i></div>
+                    <div>
+                        <h3 class="font-bold">Museum Goedang Ransoem</h3>
+                        <p class="text-xs text-gray-600">700 meter dari museum</p>
+                    </div>
+                </a>
+                
+                <a href="kota-tua.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-city"></i></div>
+                    <div>
+                        <h3 class="font-bold">Kota Tua Sawahlunto</h3>
+                        <p class="text-xs text-gray-600">1 km dari museum</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Museum Tambang
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="objek-wisata.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Objek Wisata
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Museum Tambang Sawahlunto</p>
+            <p class="mt-2">Menyimpan jejak sejarah, menginspirasi masa depan</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
