@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saka Ombilin Heritage Hotel - Butik Heritage Baru di Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .rating-star {
+            color: #f59e0b;
+        }
+        .new-badge {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#destinasi" class="hover:text-amber-300 transition">Destinasi</a></li>
+            <li><a href="index.html#penginapan" class="hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="semua-penginapan.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/saka-ombilin-hotel.jpg'); background-color: #4b5563; background-blend-mode: overlay;">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-black/70"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div class="text-7xl mb-4"><i class="fa-regular fa-building"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Saka Ombilin Heritage Hotel</h1>
+            <p class="text-xl max-w-3xl">Butik Heritage Terbaru di Jantung Kota Tambang Warisan Dunia</p>
+            <div class="flex gap-4 mt-4">
+                <span class="new-badge text-white px-6 py-2 rounded-full font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-star"></i> BARU 2025
+                </span>
+                <span class="bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full">⭐ Hotel Butik</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Informasi Umum & Sejarah -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-regular fa-building text-amber-600 mr-3"></i>
+                        Saka Ombilin Heritage Hotel
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Saka Ombilin Heritage Hotel adalah butik hotel baru yang diresmikan pada tahun 2025. Hotel ini merupakan hasil revitalisasi gedung bersejarah yang dulunya merupakan kantor utama perusahaan Belanda yang mengelola tambang batu bara Ombilin sebelum kemerdekaan Indonesia, dan kemudian menjadi kantor PT Bukit Asam Tbk Unit Pertambangan Ombilin.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Gedung yang dibangun pada tahun 1916 ini kini disulap menjadi hotel dengan 33 kamar, dikelola oleh anak perusahaan PT Bukit Asam, PT Bukit Multi Properti, bekerja sama dengan KHAS Hotel (bagian dari Hotel Indonesia Group/HIG). Hotel ini menjadi saksi bisu transformasi Sawahlunto dari kota tambang menuju kota wisata warisan dunia UNESCO.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4 bg-amber-50 p-4 rounded-xl">
+                        <i class="fa-solid fa-quote-left text-amber-600 mr-2"></i>
+                        Pada Agustus 2025, hotel ini menjadi tuan rumah Simposium Internasional Pengelola Situs Warisan Dunia (WASM) 2025 yang dihadiri Menteri Kebudayaan RI, Fadli Zon, serta delegasi dari berbagai negara.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-4">
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-regular fa-building"></i> Dibuka: 2025
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-regular fa-door-open"></i> 33 Kamar
+                        </span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+                            <i class="fa-solid fa-globe"></i> Gedung Bersejarah 1916
+                        </span>
+                    </div>
+                </div>
+                <div class="md:w-1/3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-landmark"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Warisan Budaya</h3>
+                    <div class="text-center mb-3">
+                        <span class="text-4xl font-bold text-gray-800">1916</span>
+                        <p class="text-sm text-gray-600">Tahun Bangunan</p>
+                    </div>
+                    <div class="space-y-2 text-sm border-t border-amber-200 pt-3">
+                        <div class="flex justify-between">
+                            <span>Status Bangunan</span>
+                            <span class="font-bold">Cagar Budaya</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Manajemen</span>
+                            <span class="font-bold">KHAS Hotel / HIG</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pemilik</span>
+                            <span class="font-bold">PT Bukit Asam</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Rating Tamu</span>
+                            <span class="font-bold">Hotel Baru</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid Info: Lokasi & Kontak -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Lokasi -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-location-dot text-amber-600 mr-3"></i>
+                    Lokasi Strategis
+                </h2>
+                <p class="text-gray-700 mb-3">
+                    <span class="font-bold">Alamat:</span> Jl. Manan Sati No. 3, Saringan, Kec. Lembah Segar, Kota Sawahlunto, Sumatera Barat 27422
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Terletak di pusat kawasan warisan tambang batu bara Ombilin, hotel ini menawarkan akses super mudah ke berbagai destinasi heritage utama Sawahlunto. Berada persis di jantung kota tua.
+                </p>
+                <div class="bg-amber-50 p-4 rounded-xl">
+                    <h3 class="font-bold text-gray-800 mb-2">📍 Dekat dengan (kurang dari 200 meter):</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Museum Tambang Batubara Ombilin (54 m)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Lapangan Segitiga (64 m)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Hole Mine Site Museum Mbah Suro (174 m)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Info Box & Lubang Mbah Suro (210 m)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-amber-600"></i> Kereta Mbah Suro (300 m)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kontak & Info Praktis -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-phone text-amber-600 mr-3"></i>
+                    Kontak & Info Praktis
+                </h2>
+                
+                <div class="space-y-3 mb-4">
+                    <p class="flex items-center gap-3">
+                        <i class="fa-regular fa-clock text-amber-600 w-5"></i>
+                        <span>Check-in: 14.00 - 00.30 | Check-out: 07.00 - 12.30</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-car text-amber-600 w-5"></i>
+                        <span>Parkir pribadi gratis di lokasi</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-utensils text-amber-600 w-5"></i>
+                        <span>Restoran & Bar di dalam hotel</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-person-swimming text-amber-600 w-5"></i>
+                        <span>Kolam renang dalam ruangan (indoor pool)</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-dumbbell text-amber-600 w-5"></i>
+                        <span>Fitness center / gym</span>
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl mt-4">
+                    <h3 class="font-bold text-gray-800 mb-2">⚠️ Perhatian:</h3>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li>• Tidak diperbolehkan membawa hewan peliharaan</li>
+                        <li>• Resepsionis tidak 24 jam (sesuai jam operasional)</li>
+                        <li>• Tersedia layanan laundry & medical</li>
+                        <li>• Seluruh kamar non-smoking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-3"></i>
+                Fasilitas Unggulan
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-person-swimming"></i></div>
+                    <span class="text-sm font-medium">Kolam Renang Indoor</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-wifi"></i></div>
+                    <span class="text-sm font-medium">WiFi Gratis</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-car"></i></div>
+                    <span class="text-sm font-medium">Parkir Gratis</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-utensils"></i></div>
+                    <span class="text-sm font-medium">Restoran</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-martini-glass"></i></div>
+                    <span class="text-sm font-medium">Bar</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-dumbbell"></i></div>
+                    <span class="text-sm font-medium">Fitness Center</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-people-group"></i></div>
+                    <span class="text-sm font-medium">Ruang Meeting</span>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl text-center">
+                    <div class="text-3xl text-amber-600 mb-2"><i class="fa-solid fa-tree"></i></div>
+                    <span class="text-sm font-medium">Taman & Teras</span>
+                </div>
+            </div>
+            
+            <p class="text-gray-500 text-sm mt-4">*Tersedia fasilitas diving & golf di sekitar area hotel</p>
+        </div>
+
+        <!-- Tipe Kamar -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-bed text-amber-600 mr-3"></i>
+            Tipe Kamar (33 Kamar)
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <!-- Superior 2-bed Room -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-bed"></i></div>
+                <h3 class="font-bold text-xl mb-2">Superior 2-bed Room</h3>
+                <p class="text-gray-600 text-sm mb-3">Dua tempat tidur single, cocok untuk teman atau kolega</p>
+                <ul class="space-y-2 text-sm text-gray-500 mb-4">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Luas kamar: 28 m², Lantai 1-3
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> AC, TV, lemari es, water heater
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Kamar mandi shower, non-smoking
+                    </li>
+                </ul>
+                <div class="border-t pt-4">
+                    <span class="font-bold text-amber-600">Mulai Rp 650.000/malam</span>
+                </div>
+            </div>
+
+            <!-- Junior Suite -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-bed"></i></div>
+                <h3 class="font-bold text-xl mb-2">Junior Suite</h3>
+                <p class="text-gray-600 text-sm mb-3">1 King bed, ruang lebih luas</p>
+                <ul class="space-y-2 text-sm text-gray-500 mb-4">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Luas kamar: 58 m², Lantai 1-2
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Ruang tamu terpisah, fasilitas mewah
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Pemandangan taman atau kota
+                    </li>
+                </ul>
+                <div class="border-t pt-4">
+                    <span class="font-bold text-amber-600">Mulai Rp 1.200.000/malam</span>
+                </div>
+            </div>
+
+            <!-- Ombilin Suite Room -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-crown"></i></div>
+                <h3 class="font-bold text-xl mb-2">Ombilin Suite Room</h3>
+                <p class="text-gray-600 text-sm mb-3">Suite premium dengan ruang luas dan fasilitas lengkap</p>
+                <ul class="space-y-2 text-sm text-gray-500 mb-4">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Luas kamar: 88 m², Lantai 2
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Ruang keluarga, ruang makan, dapur kecil
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Pemandangan kota heritage
+                    </li>
+                </ul>
+                <div class="border-t pt-4">
+                    <span class="font-bold text-amber-600">Mulai Rp 1.800.000/malam</span>
+                </div>
+            </div>
+
+            <!-- Suite Villa -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg p-6">
+                <div class="text-5xl text-amber-600 mb-4"><i class="fa-solid fa-house"></i></div>
+                <h3 class="font-bold text-xl mb-2">Suite Villa</h3>
+                <p class="text-gray-600 text-sm mb-3">Villa privat dengan fasilitas eksklusif</p>
+                <ul class="space-y-2 text-sm text-gray-500 mb-4">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Luas kamar: 58 m², Lantai 1
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Area privat, cocok untuk keluarga
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600"></i> Fasilitas lengkap, akses kolam renang
+                    </li>
+                </ul>
+                <div class="border-t pt-4">
+                    <span class="font-bold text-amber-600">Hubungi reservasi</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimoni Media & Tamu -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-newspaper text-amber-500 mr-3"></i>
+            Sorotan Media
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-amber-50 rounded-xl p-6 border-l-4 border-amber-500">
+                <div class="flex items-center gap-2 text-amber-600 mb-2">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                    <span class="font-bold">Xinhua News</span>
+                </div>
+                <p class="text-gray-700 text-sm italic mb-3">"Hotel Saka Ombilin yang baru dibuka dulunya adalah kantor utama perusahaan Belanda yang menjalankan tambang batu bara Ombilin yang legendaris."</p>
+                <p class="text-gray-500 text-xs">- Agustus 2025</p>
+            </div>
+            
+            <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
+                <div class="flex items-center gap-2 text-blue-600 mb-2">
+                    <i class="fa-solid fa-quote-left text-2xl"></i>
+                    <span class="font-bold">Menteri Kebudayaan RI</span>
+                </div>
+                <p class="text-gray-700 text-sm italic mb-3">"Hari ini, kita tidak hanya berdiri di sebuah kota. Kita sedang berada dalam sebuah monumen hidup... Selamat datang di Sawahlunto."</p>
+                <p class="text-gray-500 text-xs">- Fadli Zon, Pembukaan Simposium WASM 2025 di Saka Ombilin</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-xl p-6">
+                <div class="flex items-center gap-2 text-amber-600 mb-2">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <p class="text-gray-700 text-sm italic mb-3">"Kami berharap pemerintah dan simposium ini dapat membantu menjadikan Ombilin tujuan wisata yang dinamis, menciptakan lapangan kerja, dan merevitalisasi ekonomi melalui pembangunan kembali yang kreatif."</p>
+                <p class="text-gray-500 text-xs">- Sukadi (67), Warga Sawahlunto</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6">
+                <div class="flex items-center gap-1 text-amber-500 mb-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="font-bold ml-1">Catatan</span>
+                </div>
+                <p class="text-gray-700 text-sm italic mb-3">Hotel ini baru dibuka tahun 2025 dan belum memiliki ulasan tamu di platform pemesanan online. Namun telah menjadi tuan rumah acara internasional dan mendapatkan sorotan media positif.</p>
+            </div>
+        </div>
+
+        <!-- Keunggulan Hotel -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-lightbulb text-amber-600 mr-3"></i>
+                Mengapa Memilih Saka Ombilin?
+            </h2>
+            
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🏛️ 1916</span>
+                    <p class="text-gray-700 text-sm">Menginap di gedung bersejarah tahun 1916 yang telah direvitalisasi dengan standar butik modern.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🎯 Lokasi</span>
+                    <p class="text-gray-700 text-sm">Lokasi paling strategis di pusat situs warisan dunia UNESCO, dekat dengan semua museum.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🏊 Indoor Pool</span>
+                    <p class="text-gray-700 text-sm">Salah satu hotel pertama di Sawahlunto dengan fasilitas kolam renang indoor.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl">
+                    <span class="font-bold text-amber-600 block mb-1">🤝 Manajemen</span>
+                    <p class="text-gray-700 text-sm">Dikelola oleh KHAS Hotel (HIG) dengan standar pelayanan terjamin.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peta Lokasi -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi Saka Ombilin Heritage Hotel
+            </h2>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+            <p class="text-gray-600 text-sm mt-4">📍 Jl. Manan Sati, Saringan, Kec. Lembah Segar, Kota Sawahlunto, Sumatera Barat 27427</p>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="semua-penginapan.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Daftar Penginapan
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto</p>
+            <p class="mt-2">Sumber informasi: Xinhua, ANTARA, Booking.com, Trip.com</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

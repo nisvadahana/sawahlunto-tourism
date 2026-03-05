@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puncak Batu Runcing - Surga Tersembunyi Sawahlunto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .panorama-card {
+            transition: all 0.3s ease;
+        }
+        .panorama-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="nav-link hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#destinasi" class="nav-link hover:text-amber-300 transition">Destinasi</a></li>
+            <li><a href="index.html#penginapan" class="nav-link hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="nav-link hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="nav-link hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="destinasi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Destinasi
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/batu-runcing1.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        <div class="relative z-10 flex flex-col items-center justify-end h-full text-center text-white px-4 pb-16">
+            <div class="text-7xl mb-4 drop-shadow-2xl"><i class="fa-solid fa-mountain"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Puncak Batu Runcing</h1>
+            <p class="text-xl max-w-3xl">Surga Tersembunyi dengan Formasi Batu Unik</p>
+            <div class="flex gap-3 mt-6">
+                <span class="bg-amber-500 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">🪨 Batu Unik</span>
+                <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm">📍 Kawasan Bukit Barisan</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Pengantar -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-mountain text-amber-600 mr-3"></i>
+                        Puncak Batu Runcing
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Puncak Batu Runcing adalah destinasi wisata alam yang masih tersembunyi di Kota Sawahlunto. Tempat ini menawarkan pemandangan spektakuler dengan formasi batu yang unik dan menjulang, memberikan pengalaman petualangan yang berbeda.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Dinamakan Batu Runcing karena di puncak ini terdapat batu-batu besar dengan bentuk runcing yang khas, seolah-olah menantang para pengunjung untuk berfoto dengan latar pemandangan yang menakjubkan. Cocok bagi pecinta alam dan fotografi.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6">
+                    <div class="text-amber-600 text-3xl mb-3 text-center"><i class="fa-solid fa-star"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Cepat</h3>
+                    <div class="space-y-2 text-sm">
+                        <p><span class="font-bold">📍 Lokasi:</span> Kawasan Bukit Barisan, Sawahlunto</p>
+                        <p><span class="font-bold">⏰ Waktu Terbaik:</span> Pagi & Sore</p>
+                        <p><span class="font-bold">📸 Spot:</span> Foto di atas batu runcing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keindahan & Daya Tarik -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-camera text-amber-600 mr-3"></i>
+            Keindahan & Daya Tarik
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="panorama-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/batu-runcing2.jpg" alt="Formasi Batu Unik" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2 flex items-center"><i class="fa-solid fa-stone text-amber-500 mr-2"></i> Formasi Batu Unik</h3>
+                    <p class="text-gray-600 text-sm">Batu-batu besar dengan bentuk runcing yang khas, menjadi ciri utama destinasi ini.</p>
+                </div>
+            </div>
+            
+            <div class="panorama-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/batu-runcing3.jpg" alt="Panorama Alam" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2 flex items-center"><i class="fa-solid fa-tree text-amber-500 mr-2"></i> Panorama Hijau</h3>
+                    <p class="text-gray-600 text-sm">Pemandangan perbukitan hijau yang membentang luas, menyegarkan mata.</p>
+                </div>
+            </div>
+            
+            <div class="panorama-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/batu-runcing4.jpg" alt="Spot Foto" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2 flex items-center"><i class="fa-solid fa-camera-retro text-amber-500 mr-2"></i> Spot Foto Eksotis</h3>
+                    <p class="text-gray-600 text-sm">Berkreasi dengan foto di atas batu dengan latar alam yang memukau.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informasi Praktis -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Waktu Terbaik -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-amber-600 mr-3"></i>
+                    Waktu Terbaik Berkunjung
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <i class="fa-solid fa-sun text-amber-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Pagi Hari (06.00 - 09.00)</h3>
+                            <p class="text-gray-600 text-sm">Udara masih segar, kabut tipis menambah kesan mistis pada formasi batu.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <i class="fa-solid fa-cloud-sun text-amber-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Sore Hari (16.00 - 18.00)</h3>
+                            <p class="text-gray-600 text-sm">Cahaya matahari sore yang hangat, cocok untuk foto dengan nuansa jingga.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <i class="fa-solid fa-cloud text-amber-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Siang Hari (10.00 - 14.00)</h3>
+                            <p class="text-gray-600 text-sm">Cahaya terang untuk foto, namun disarankan membawa pelindung matahari.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips Fotografi & Petualangan -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-camera text-amber-600 mr-3"></i>
+                    Tips Fotografi
+                </h2>
+                
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Gunakan sepatu trekking</span> karena medan berbatu.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Bawa air minum</span> yang cukup.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Pakaian berwarna kontras</span> agar menonjol di antara batu dan hijau.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Berhati-hati saat memanjat batu</span> untuk foto.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-amber-600 mt-1"></i>
+                        <span><span class="font-bold">Lensa wide</span> untuk menangkap formasi batu dan panorama.</span>
+                    </li>
+                </ul>
+                
+                <div class="mt-4 bg-amber-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700"><i class="fa-solid fa-lightbulb text-amber-600 mr-2"></i>Jangan lupa bawa jas hujan jika musim hujan tiba.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-amber-600 mr-3"></i>
+                Fasilitas di Puncak Batu Runcing
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-car"></i></div>
+                    <span class="text-sm font-medium">Area Parkir</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-camera"></i></div>
+                    <span class="text-sm font-medium">Spot Foto</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-store"></i></div>
+                    <span class="text-sm font-medium">Warung</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-amber-600 mb-2"><i class="fa-solid fa-toilet"></i></div>
+                    <span class="text-sm font-medium">Toilet</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lokasi & Rute -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i>
+                Lokasi & Rute Menuju Puncak Batu Runcing
+            </h2>
+            <p class="text-gray-700 mb-4">
+                <span class="font-bold">Alamat:</span> Kawasan Bukit Barisan, Kota Sawahlunto, Sumatera Barat.
+            </p>
+            <p class="text-gray-700 mb-4">
+                <span class="font-bold">Jarak dari Pusat Kota:</span> ± 7 km (30 menit perjalanan)
+            </p>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Spot Terdekat -->
+        <div class="bg-amber-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-location-dot text-amber-600 mr-3"></i>
+                Wisata Terdekat
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="danau-biru.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-water"></i></div>
+                    <div>
+                        <h3 class="font-bold">Danau Biru</h3>
+                        <p class="text-xs text-gray-600">5 km dari Batu Runcing</p>
+                    </div>
+                </a>
+                
+                <a href="puncak-cemara.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-mountain"></i></div>
+                    <div>
+                        <h3 class="font-bold">Puncak Cemara</h3>
+                        <p class="text-xs text-gray-600">6 km dari Batu Runcing</p>
+                    </div>
+                </a>
+                
+                <a href="puncak-polan.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-amber-600"><i class="fa-solid fa-mountain"></i></div>
+                    <div>
+                        <h3 class="font-bold">Puncak Polan</h3>
+                        <p class="text-xs text-gray-600">6,5 km dari Batu Runcing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="destinasi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Destinasi
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Pesona Alam Sawahlunto</p>
+            <p class="mt-2">Jelajahi keunikan Puncak Batu Runcing, surga tersembunyi Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-600 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

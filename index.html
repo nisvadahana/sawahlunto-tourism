@@ -21,6 +21,14 @@
         html {
             scroll-behavior: smooth;
         }
+        .visitor-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            color: white;
+            font-weight: 500;
+        }
     </style>
 </head>
 <script>
@@ -30,7 +38,7 @@
 <body class="bg-gray-50 font-sans antialiased">
 
     <!-- Hero Section dengan background foto kota Sawahlunto -->
-    <div id="beranda" class="relative h-screen bg-cover bg-center" style="background-image: url('images/foto4.jpeg');">
+    <div id="beranda" class="relative h-screen bg-cover bg-center" style="background-image: url('images/kelok16.jpeg');">
         <!-- Overlay gradien -->
         <div class="absolute inset-0 hero-overlay"></div>
         
@@ -39,7 +47,7 @@
             <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
             <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wide">
                 <li><a href="#beranda" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Beranda</a></li>
-                <li><a href="#atraksi" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Atraksi</a></li>
+                <li><a href="#destinasi" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Destinasi</a></li>
                 <li><a href="#penginapan" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Penginapan</a></li>
                 <li><a href="#kuliner" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Kuliner</a></li>
                 <li><a href="#acara" class="hover:text-amber-300 transition duration-300 border-b-2 border-transparent hover:border-amber-300 pb-1">Acara</a></li>
@@ -56,7 +64,7 @@
                 Temukan Keajaiban Sawahlunto. Dari tambang batu bara bersejarah hingga pemandangan alam yang memukau, rasakan pesona kota pusaka di Sumatra Barat.
             </p>
             <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
-                <a href="atraksi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-4 rounded-full transition duration-300 shadow-lg hover:shadow-xl text-center">Jelajahi Atraksi</a>
+                <a href="destinasi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-10 py-4 rounded-full transition duration-300 shadow-lg hover:shadow-xl text-center">Jelajahi destinasi</a>
                 <a href="video-tur.html" class="border-2 border-white hover:bg-white hover:text-gray-900 px-10 py-4 rounded-full transition duration-300 flex items-center justify-center gap-2 font-medium">
                     <i class="fa-solid fa-play"></i> Tonton Tur Video
                 </a>
@@ -108,11 +116,11 @@
         </div>
     </section>
 
-    <!-- Section Atraksi -->
-    <section id="atraksi" class="py-20 bg-gray-50">
+    <!-- Section destinasi -->
+    <section id="destinasi" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Atraksi Populer</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Destinasi Populer</h2>
                 <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
             </div>
             
@@ -151,7 +159,7 @@
                 </div>
             </div>
              <div class="text-center mt-10">
-                <a href="semua-atraksi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">Lihat Semua Atraksi</a>
+                <a href="semua-destinasi.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-full transition">Lihat Semua destinasi</a>
             </div>            
 
         </div>
@@ -181,7 +189,7 @@
                         <div class="text-amber-600 text-3xl mb-3"><i class="fa-solid fa-hotel"></i></div>
                         <h4 class="font-bold text-lg mb-1">Parai City Garden Hotel</h4>
                         <p class="text-gray-600 text-sm mb-2">⭐ 4.2 · Rp400rb+</p>
-                        <p class="text-gray-600 text-sm">Hotel dengan nuansa tradisional dan modern, fasilitas kamar lengkap, restoran, area parkir, dan dekat sejumlah atraksi wisata.</p>
+                        <p class="text-gray-600 text-sm">Hotel dengan nuansa tradisional dan modern, fasilitas kamar lengkap, restoran, area parkir, dan dekat sejumlah destinasi wisata.</p>
                     </a>
                     
                     <a href="hotel-cahaya.html" class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 p-5 block">
@@ -299,27 +307,36 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-10">
+    <!-- Footer dengan Visitor Counter sebaris dengan email di posisi center -->
+    <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center text-sm">
-                <div class="flex items-center space-x-4 text-gray-300">
+            <!-- Baris pertama: Copyright dan visitor counter di tengah -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
+                <div class="flex items-center space-x-4 text-gray-300 text-sm order-2 md:order-1">
                     <span><i class="fa-regular fa-copyright"></i> 2026 Pemerintah Kota Sawahlunto</span>
                     <span class="text-gray-600">|</span>
-                    <span>Seluruh hak cipta dilindungi</span>
+                    <span>Hak cipta dilindungi</span>
+                </div>
+                
+                <!-- Visitor Counter di tengah (tanpa background) -->
+                <div class="order-1 md:order-2 text-sm text-gray-300 mx-auto md:mx-0">
+                    <i class="fa-solid fa-user mr-2 text-amber-400"></i>
+                    <span>Pengunjung: <span id="visitorCount" class="font-bold text-white">0</span></span>
                 </div>
                 
                 <!-- Pesan aktivasi Windows -->
-                <div class="flex items-center space-x-3 mt-4 md:mt-0 bg-gray-800 px-5 py-2 rounded-full">
+                <div class="flex items-center space-x-3 bg-gray-800 px-5 py-2 rounded-full order-3">
                     <i class="fa-solid fa-circle-exclamation text-amber-400"></i>
-                    <span class="font-medium">Activate Windows</span>
+                    <span class="font-medium text-sm">Activate Windows</span>
                     <span class="text-gray-400 text-xs hidden sm:inline">Go to Settings to activate Windows</span>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 my-6"></div>
+            <!-- Garis pembatas -->
+            <div class="border-t border-gray-800 my-4"></div>
             
-            <div class="flex flex-wrap justify-between text-gray-400 text-xs">
+            <!-- Baris kedua: Email, Telepon, dan Social Media -->
+            <div class="flex flex-wrap justify-between items-center text-gray-400 text-xs">
                 <div class="flex space-x-4">
                     <span><i class="fa-regular fa-envelope mr-1"></i> info@sawahlunto.go.id</span>
                     <span><i class="fa-solid fa-phone mr-1"></i> (0754) 123456</span>
@@ -339,6 +356,40 @@
     </button>
 
     <script>
+        // Script untuk visitor counter menggunakan localStorage
+        function updateVisitorCounter() {
+            // Kunci untuk localStorage
+            const storageKey = 'sawahlunto_visitor_count';
+            const sessionKey = 'sawahlunto_session_counted';
+            
+            // Cek apakah sudah dihitung dalam session ini
+            if (!sessionStorage.getItem(sessionKey)) {
+                // Ambil jumlah pengunjung saat ini dari localStorage
+                let currentCount = localStorage.getItem(storageKey);
+                
+                // Jika belum ada, set ke 0
+                if (currentCount === null) {
+                    currentCount = 0;
+                }
+                
+                // Konversi ke number dan tambah 1
+                currentCount = parseInt(currentCount) + 1;
+                
+                // Simpan kembali ke localStorage
+                localStorage.setItem(storageKey, currentCount);
+                
+                // Tandai bahwa sudah dihitung dalam session ini
+                sessionStorage.setItem(sessionKey, 'true');
+            }
+            
+            // Tampilkan jumlah pengunjung
+            const finalCount = localStorage.getItem(storageKey) || 0;
+            document.getElementById('visitorCount').textContent = finalCount;
+        }
+
+        // Panggil fungsi visitor counter saat halaman dimuat
+        window.addEventListener('load', updateVisitorCounter);
+
         // Script untuk tombol scroll ke atas
         window.addEventListener('scroll', function() {
             const scrollBtn = document.getElementById('scrollTop');

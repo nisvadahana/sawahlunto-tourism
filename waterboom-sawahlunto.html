@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterboom Sawahlunto - Wahana Air Keluarga Terlengkap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .panorama-card {
+            transition: all 0.3s ease;
+        }
+        .panorama-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .wave-bg {
+            background: linear-gradient(180deg, #3b82f6 0%, #60a5fa 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="bg-gray-900 text-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-wider">SAWAHLUNTO</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase">
+            <li><a href="index.html" class="nav-link hover:text-amber-300 transition">Beranda</a></li>
+            <li><a href="index.html#destinasi" class="nav-link hover:text-amber-300 transition">Destinasi</a></li>
+            <li><a href="index.html#penginapan" class="nav-link hover:text-amber-300 transition">Penginapan</a></li>
+            <li><a href="index.html#kuliner" class="nav-link hover:text-amber-300 transition">Kuliner</a></li>
+            <li><a href="index.html#acara" class="nav-link hover:text-amber-300 transition">Acara</a></li>
+        </ul>
+        <a href="destinasi.html" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-full text-sm font-bold transition flex items-center gap-2">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Destinasi
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/waterboom1.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+        <div class="absolute inset-0 wave-bg opacity-20"></div>
+        <div class="relative z-10 flex flex-col items-center justify-end h-full text-center text-white px-4 pb-16">
+            <div class="text-7xl mb-4 drop-shadow-2xl"><i class="fa-solid fa-water-ladder"></i></div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 drop-shadow-2xl">Waterboom Sawahlunto</h1>
+            <p class="text-xl max-w-3xl">Wahana Air Keluarga Terlengkap di Kota Sawahlunto</p>
+            <div class="flex gap-3 mt-6">
+                <span class="bg-amber-500 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">🏊‍♂️ Kolam Renang</span>
+                <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm">📍 Pusat Kota Sawahlunto</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-16 fade-in">
+
+        <!-- Pengantar -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fa-solid fa-water-ladder text-blue-600 mr-3"></i>
+                        Waterboom Sawahlunto
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Waterboom Sawahlunto adalah destinasi wisata air keluarga yang menawarkan keseruan dan kesejukan di tengah kota. Dengan berbagai wahana air yang aman dan menyenangkan, tempat ini menjadi pilihan utama untuk liburan keluarga.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Dilengkapi dengan kolam renang dewasa, kolam anak-anak, seluncuran air, dan fasilitas pendukung lainnya, Waterboom Sawahlunto menjamin pengalaman berenang yang tak terlupakan bagi seluruh anggota keluarga.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6">
+                    <div class="text-blue-600 text-3xl mb-3 text-center"><i class="fa-solid fa-star"></i></div>
+                    <h3 class="font-bold text-lg text-center mb-2">Info Cepat</h3>
+                    <div class="space-y-2 text-sm">
+                        <p><span class="font-bold">📍 Lokasi:</span> Pusat Kota Sawahlunto</p>
+                        <p><span class="font-bold">⏰ Jam Buka:</span> 08.00 - 18.00 WIB</p>
+                        <p><span class="font-bold">🎫 Tiket:</span> Rp 15.000 - Rp 25.000</p>
+                        <p><span class="font-bold">📸 Spot:</span> Kolam renang & seluncuran</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keindahan & Daya Tarik -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fa-solid fa-camera text-blue-600 mr-3"></i>
+            Wahana & Daya Tarik
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="panorama-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/waterboom2.jpg" alt="Kolam Renang Dewasa" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2 flex items-center"><i class="fa-solid fa-person-swimming text-blue-500 mr-2"></i> Kolam Renang Dewasa</h3>
+                    <p class="text-gray-600 text-sm">Kolam renang dengan kedalaman bervariasi, cocok untuk berenang santai atau olahraga.</p>
+                </div>
+            </div>
+            
+            <div class="panorama-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/waterboom3.jpg" alt="Kolam Anak" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2 flex items-center"><i class="fa-solid fa-child text-blue-500 mr-2"></i> Kolam Anak</h3>
+                    <p class="text-gray-600 text-sm">Kolam dangkal dengan air terjun mini dan mainan air yang aman untuk si kecil.</p>
+                </div>
+            </div>
+            
+            <div class="panorama-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <img src="images/waterboom4.jpg" alt="Seluncuran Air" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold text-lg mb-2 flex items-center"><i class="fa-solid fa-water text-blue-500 mr-2"></i> Seluncuran Air</h3>
+                    <p class="text-gray-600 text-sm">Wahana seluncur yang seru dan menantang untuk anak-anak hingga dewasa.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informasi Praktis -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Harga Tiket -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-ticket text-blue-600 mr-3"></i>
+                    Harga Tiket Masuk
+                </h2>
+                
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Weekday (Senin-Jumat)</span>
+                        <span class="font-bold text-blue-600">Rp 15.000/orang</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Weekend & Libur Nasional</span>
+                        <span class="font-bold text-blue-600">Rp 20.000/orang</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Anak-anak (di bawah 5 tahun)</span>
+                        <span class="font-bold text-blue-600">Rp 10.000</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Sewa Ban/Pelampung</span>
+                        <span class="font-bold text-blue-600">Rp 5.000</span>
+                    </div>
+                </div>
+                
+                <div class="mt-4 bg-blue-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700"><i class="fa-solid fa-info-circle text-blue-600 mr-2"></i>Tiket sudah termasuk akses ke semua wahana air.</p>
+                </div>
+            </div>
+
+            <!-- Jam Operasional -->
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fa-regular fa-clock text-blue-600 mr-3"></i>
+                    Jam Operasional
+                </h2>
+                
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Senin - Jumat</span>
+                        <span class="font-bold">08.00 - 18.00 WIB</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Sabtu - Minggu</span>
+                        <span class="font-bold">07.00 - 18.00 WIB</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                        <span class="font-medium">Libur Nasional</span>
+                        <span class="font-bold">07.00 - 18.00 WIB</span>
+                    </div>
+                </div>
+                
+                <div class="mt-4 bg-blue-50 p-3 rounded-lg">
+                    <p class="text-sm text-gray-700"><i class="fa-solid fa-lightbulb text-blue-600 mr-2"></i>Waktu terbaik berkunjung pagi hari (08.00-11.00) untuk menghindari keramaian.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fasilitas -->
+        <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-umbrella-beach text-blue-600 mr-3"></i>
+                Fasilitas di Waterboom Sawahlunto
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-car"></i></div>
+                    <span class="text-sm font-medium">Parkir Luas</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-utensils"></i></div>
+                    <span class="text-sm font-medium">Kantin</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-toilet"></i></div>
+                    <span class="text-sm font-medium">Toilet & Bilas</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-mosque"></i></div>
+                    <span class="text-sm font-medium">Mushola</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-couch"></i></div>
+                    <span class="text-sm font-medium">Gazebo</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-locker"></i></div>
+                    <span class="text-sm font-medium">Loker</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-life-ring"></i></div>
+                    <span class="text-sm font-medium">Life Guard</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl text-center">
+                    <div class="text-2xl text-blue-600 mb-2"><i class="fa-solid fa-wifi"></i></div>
+                    <span class="text-sm font-medium">WiFi Area</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Berkunjung -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-circle-info text-blue-600 mr-3"></i>
+                Tips Berkunjung ke Waterboom
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fa-solid fa-check-circle text-green-500 mr-2"></i> Yang Perlu Dibawa:</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1 text-sm"></i> <span>Baju ganti & handuk</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1 text-sm"></i> <span>Kacamata renang (jika perlu)</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1 text-sm"></i> <span>Tabir surya/sunscreen</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1 text-sm"></i> <span>Kantong plastik basah</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1 text-sm"></i> <span>Uang cash untuk makanan/sewa</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-3 flex items-center"><i class="fa-solid fa-exclamation-triangle text-amber-500 mr-2"></i> Peraturan:</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 text-sm"></i> <span>Dilarang membawa makanan/minuman dari luar</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 text-sm"></i> <span>Anak-anak harus dalam pengawasan orang tua</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 text-sm"></i> <span>Dilarang berlari di area kolam</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 text-sm"></i> <span>Gunakan pakaian renang yang sopan</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lokasi & Rute -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-12">
+            <h2 class="text-xl font-bold mb-4 flex items-center">
+                <i class="fa-solid fa-map-location-dot text-blue-600 mr-2"></i>
+                Lokasi & Rute Menuju Waterboom Sawahlunto
+            </h2>
+            <p class="text-gray-700 mb-4">
+                <span class="font-bold">Alamat:</span> Jalan Lintas Sumatera, Desa Muaro Kalaban, Kecamatan Silungkang, Kota Sawahlunto, Sumatera Barat.
+            </p>
+            <p class="text-gray-700 mb-4">
+                <span class="font-bold">Jarak dari Pusat Kota:</span> ± 1 km (5 menit perjalanan)
+            </p>
+            <p class="text-gray-700 mb-4">
+                <span class="font-bold">Transportasi:</span> Dapat dijangkau dengan kendaraan pribadi atau angkutan kota.
+            </p>
+            <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                <i class="fa-solid fa-map text-6xl text-gray-400 mr-4"></i>
+                <span class="text-gray-500">Peta interaktif akan ditampilkan di sini</span>
+            </div>
+        </div>
+
+        <!-- Spot Terdekat -->
+        <div class="bg-blue-50 rounded-2xl p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fa-solid fa-location-dot text-blue-600 mr-3"></i>
+                Wisata Terdekat
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="danau-biru.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-blue-600"><i class="fa-solid fa-water"></i></div>
+                    <div>
+                        <h3 class="font-bold">Danau Biru</h3>
+                        <p class="text-xs text-gray-600">2 km dari Waterboom</p>
+                    </div>
+                </a>
+                
+                <a href="puncak-cemara.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-blue-600"><i class="fa-solid fa-mountain"></i></div>
+                    <div>
+                        <h3 class="font-bold">Puncak Cemara</h3>
+                        <p class="text-xs text-gray-600">3 km dari Waterboom</p>
+                    </div>
+                </a>
+                
+                <a href="museum-goedang-ransoem.html" class="bg-white p-4 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                    <div class="text-3xl text-blue-600"><i class="fa-solid fa-building"></i></div>
+                    <div>
+                        <h3 class="font-bold">Museum Goedang Ransoem</h3>
+                        <p class="text-xs text-gray-600">1,5 km dari Waterboom</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali -->
+        <div class="text-center">
+            <a href="destinasi.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-full transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Destinasi
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p><i class="fa-regular fa-copyright"></i> 2026 Dinas Pariwisata Kota Sawahlunto - Pesona Alam Sawahlunto</p>
+            <p class="mt-2">Rasakan keseruan berenang bersama keluarga di Waterboom Sawahlunto</p>
+        </div>
+    </footer>
+
+    <!-- Tombol scroll ke atas -->
+    <button id="scrollTop" class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center text-xl opacity-0 invisible">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollBtn.style.opacity = '1';
+                scrollBtn.style.visibility = 'visible';
+            } else {
+                scrollBtn.style.opacity = '0';
+                scrollBtn.style.visibility = 'hidden';
+            }
+        });
+        
+        document.getElementById('scrollTop')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
