@@ -420,5 +420,90 @@
             });
         });
     </script>
+    <script>
+    // Script untuk mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const navMenu = document.querySelector('ul.hidden.md\\:flex');
+        
+        if (mobileMenuButton && navMenu) {
+            // Buat elemen menu mobile jika belum ada
+            let mobileNav = document.querySelector('.mobile-nav-menu');
+            if (!mobileNav) {
+                mobileNav = document.createElement('div');
+                mobileNav.className = 'mobile-nav-menu fixed inset-0 bg-gray-900 bg-opacity-95 z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden';
+                mobileNav.innerHTML = `
+                    <div class="flex justify-end p-5">
+                        <button class="close-mobile-menu text-white text-3xl focus:outline-none">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="flex flex-col items-center justify-center space-y-8 text-white text-xl font-medium mt-16">
+                        <li><a href="#beranda" class="mobile-nav-link hover:text-amber-300">Beranda</a></li>
+                        <li><a href="#destinasi" class="mobile-nav-link hover:text-amber-300">Destinasi</a></li>
+                        <li><a href="#penginapan" class="mobile-nav-link hover:text-amber-300">Penginapan</a></li>
+                        <li><a href="#kuliner" class="mobile-nav-link hover:text-amber-300">Kuliner</a></li>
+                        <li><a href="#acara" class="mobile-nav-link hover:text-amber-300">Acara</a></li>
+                    </ul>
+                `;
+                document.body.appendChild(mobileNav);
+            }
+
+            // Fungsi untuk membuka menu mobile
+            function openMobileMenu() {
+                mobileNav.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden'; // Mencegah scroll
+            }
+
+            // Fungsi untuk menutup menu mobile
+            function closeMobileMenu() {
+                mobileNav.classList.add('translate-x-full');
+                document.body.style.overflow = ''; // Kembalikan scroll
+            }
+
+            // Event listener untuk tombol menu (garis tiga)
+            mobileMenuButton.addEventListener('click', openMobileMenu);
+
+            // Event listener untuk tombol close (X)
+            const closeButton = mobileNav.querySelector('.close-mobile-menu');
+            if (closeButton) {
+                closeButton.addEventListener('click', closeMobileMenu);
+            }
+
+            // Event listener untuk link di dalam menu mobile
+            const mobileLinks = mobileNav.querySelectorAll('.mobile-nav-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        closeMobileMenu();
+                        setTimeout(() => {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 300); // Delay untuk menunggu animasi menu tertutup
+                    }
+                });
+            });
+
+            // Tutup menu jika klik di luar area menu (opsional)
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === mobileNav) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Tutup menu jika resize ke desktop
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) { // md breakpoint
+                    closeMobileMenu();
+                }
+            });
+        }
+    });
+</script>
 </body>
 </html>
